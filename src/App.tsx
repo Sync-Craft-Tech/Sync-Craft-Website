@@ -111,7 +111,7 @@ function App() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
         <div className="flex h-16 items-center justify-between px-4 md:px-6">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2">
+          <a href="#Home" className="flex items-center space-x-2">
             <div className="h-8 w-8 rounded-lg bg-primary" />
             <span className="text-xl font-bold">SyncCraft</span>
           </a>
@@ -135,7 +135,7 @@ function App() {
           {/* Desktop CTA + Mobile Trigger */}
           <div className="flex items-center gap-4">
             <Button className="hidden md:inline-flex" onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' });
             }}>Contact Us</Button>
 
             {/* Mobile Hamburger */}
@@ -191,7 +191,7 @@ function App() {
       </header>
 
       {/* ====================== HERO ====================== */}
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+      <section id="Home"className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
         <div className="hero px-4 md:px-6">
           <div className="absolute z-0 inset-0 overflow-hidden opacity-20">
             <svg id="background-svg" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'><rect fill='#ffffff' width='2000' height='1500' /><defs><rect stroke='#ffffff' stroke-width='0.4' width='1' height='1' id='s' /><pattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><use fill='#fcfcfc' href='#s' y='2' /><use fill='#fcfcfc' href='#s' x='1' y='2' /><use fill='#fafafa' href='#s' x='2' y='2' /><use fill='#fafafa' href='#s' /><use fill='#f7f7f7' href='#s' x='2' /><use fill='#f7f7f7' href='#s' x='1' y='1' /></pattern><pattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#f5f5f5'><use href='#s' /><use href='#s' y='5' /><use href='#s' x='1' y='10' /><use href='#s' x='2' y='1' /><use href='#s' x='2' y='4' /><use href='#s' x='3' y='8' /><use href='#s' x='4' y='3' /><use href='#s' x='4' y='7' /><use href='#s' x='5' y='2' /><use href='#s' x='5' y='6' /><use href='#s' x='6' y='9' /></g></pattern><pattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#f5f5f5'><use href='#s' y='5' /><use href='#s' y='8' /><use href='#s' x='1' y='1' /><use href='#s' x='1' y='9' /><use href='#s' x='1' y='12' /><use href='#s' x='2' /><use href='#s' x='2' y='4' /><use href='#s' x='3' y='2' /><use href='#s' x='3' y='6' /><use href='#s' x='3' y='11' /><use href='#s' x='4' y='3' /><use href='#s' x='4' y='7' /><use href='#s' x='4' y='10' /></g></pattern><pattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#f2f2f2'><use href='#s' y='11' /><use href='#s' x='2' y='9' /><use href='#s' x='5' y='12' /><use href='#s' x='9' y='4' /><use href='#s' x='12' y='1' /><use href='#s' x='16' y='6' /></g></pattern><pattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#ffffff'><use href='#s' y='9' /><use href='#s' x='16' y='5' /><use href='#s' x='14' y='2' /><use href='#s' x='11' y='11' /><use href='#s' x='6' y='14' /></g><g fill='#efefef'><use href='#s' x='3' y='13' /><use href='#s' x='9' y='7' /><use href='#s' x='13' y='10' /><use href='#s' x='15' y='4' /><use href='#s' x='18' y='1' /></g></pattern><pattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#7F22FE'><use href='#s' x='2' y='5' /><use href='#s' x='16' y='38' /><use href='#s' x='46' y='42' /><use href='#s' x='29' y='20' /></g></pattern><pattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#7F22FE'><use href='#s' x='33' y='13' /><use href='#s' x='27' y='54' /><use href='#s' x='55' y='55' /></g></pattern><pattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'><g fill='#7F22FE'><use href='#s' x='11' y='8' /><use href='#s' x='51' y='13' /><use href='#s' x='17' y='73' /><use href='#s' x='99' y='57' /></g></pattern></defs><rect fill='url(#a)' width='100%' height='100%' /><rect fill='url(#b)' width='100%' height='100%' /><rect fill='url(#h)' width='100%' height='100%' /><rect fill='url(#c)' width='100%' height='100%' /><rect fill='url(#d)' width='100%' height='100%' /><rect fill='url(#e)' width='100%' height='100%' /><rect fill='url(#f)' width='100%' height='100%' /><rect fill='url(#g)' width='100%' height='100%' /></svg>
@@ -300,7 +300,7 @@ function App() {
       </section>
 
       {/* ====================== CONTACT ====================== */}
-      <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+      <section id="Contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="hero px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">

@@ -14,6 +14,10 @@
     --bg-scroll-easing: linear;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #background-svg {
     will-change: transform;
     transform-origin: center;
