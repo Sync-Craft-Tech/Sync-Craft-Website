@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+// TODO: Improve look and fix any jitter issues
 import {
     Carousel,
     CarouselContent,
@@ -45,29 +45,6 @@ const projects = [
 ];
 
 const ProjectDisplayComponents = () => {
-    const carouselRef = useRef<HTMLDivElement>(null);
-
-    // Mark the currently centered slide
-    useEffect(() => {
-        const viewport = carouselRef.current?.querySelector('.embla__viewport');
-        if (!viewport) return;
-
-        const slides = viewport.querySelectorAll<HTMLElement>('.embla__slide');
-
-        const updateCenter = () => {
-            slides.forEach((s) => s.removeAttribute('data-center'));
-            const centerIdx = Math.round(
-                (viewport.scrollLeft + viewport.clientWidth / 2) /
-                (slides[0]?.clientWidth || 1)
-            );
-            slides[centerIdx]?.setAttribute('data-center', 'true');
-        };
-
-        viewport.addEventListener('scroll', updateCenter);
-        updateCenter();
-
-        return () => viewport.removeEventListener('scroll', updateCenter);
-    }, []);
 
     return (
         <>
@@ -84,54 +61,96 @@ const ProjectDisplayComponents = () => {
                         </p>
                     </div>
 
-                    <Carousel
-                        opts={{
-                            align: 'start',
-                            loop: true,
-                        }}
-                        plugins={[
-                            Autoplay({
-                                delay: 4000,
-                                stopOnInteraction: true,
-                            }),
-                        ]}
-                        className="w-full"
-                    >
-                        <CarouselContent className="-ml-2 md:-ml-4">
-                            {projects.map((proj, idx) => (
-                                <CarouselItem
-                                    key={idx}
-                                    className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3 transition-all duration-300"
-                                    style={{
-                                        transform: 'scale(1)',
-                                        opacity: 1,
-                                    }}
-                                >
-                                    <Card className="h-full overflow-hidden">
-                                        <CardContent className="p-0">
-                                            <div className="aspect-video bg-muted/50 relative">
-                                                <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-                                                    <span className="text-sm text-gray-500">
-                                                        {proj.img.replace('/projects/', '').replace('.jpg', '')}
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div className="p-4 space-y-2">
-                                                <h3 className="font-semibold text-lg">{proj.title}</h3>
-                                                <p className="text-sm text-muted-foreground">
-                                                    {proj.description}
-                                                </p>
-                                            </div>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
+                    <div className="relative w-full">
+                        <Carousel
+                            opts={{
+                                align: 'start',
+                                loop: true,
+                                containScroll: 'trimSnaps',
+                            }}
+                            plugins={[
+                                Autoplay({
+                                    delay: 4500,
+                                    stopOnInteraction: true,
+                                }),
+                            ]}
+                            className="w-full"
+                        >
+                            <CarouselContent className="-ml-2 md:-ml-4">
+                                {projects.map((proj, idx) => (
+                                    <CarouselItem
+                                        key={idx}
+                                        className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3 transition-transform duration-500"
+                                        style={{
+                                            transform: 'translateZ(0)',
+                                            opacity: 1,
+                                        }}
+                                    >
+                                        <Card className="h-full overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                                            <CardContent className="p-0">
+                                                <div className="aspect-video relative overflow-hidden">
+                                                    {/* image */}
+                                                    <img
+                                                        src={proj.img}
+                                                        alt={proj.title}
+                                                        className="w-full h-full object-cover transform transition-transform duration-500 hover:scale-105"
+                                                        loading="lazy"
+                                                    />
 
-                        {/* Navigation arrows */}
-                        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:flex h-10 w-10 bg-background/80 backdrop-blur-sm border shadow-md hover:bg-background" />
-                        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:flex h-10 w-10 bg-background/80 backdrop-blur-sm border shadow-md hover:bg-background" />
-                    </Carousel>
+                                                    {/* subtle gradient overlay and caption */}
+                                                    <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
+                                                    <div className="absolute left-4 bottom-4 right-4 text-left text-white pointer-events-auto">
+                                                        <h3 className="font-semibold text-lg drop-shadow-sm">
+                                                            {proj.title}
+                                                        </h3>
+                                                        <p className="text-sm opacity-90 mt-1 drop-shadow-sm">
+                                                            {proj.description}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                {/* meta / actions area */}
+                                                <div className="p-4 flex items-center justify-between gap-4">
+                                                    <div className="text-sm text-muted-foreground">
+                                                        <span className="font-medium">Role:</span> Design & Dev
+                                                    </div>
+                                                    <div className="flex items-center gap-2">
+                                                        <button
+                                                            className="text-sm px-3 py-1 rounded-md border bg-background/60 hover:bg-background text-muted-foreground transition"
+                                                            aria-label={`View ${proj.title}`}
+                                                        >
+                                                            View Case
+                                                        </button>
+                                                        <button
+                                                            className="text-sm px-3 py-1 rounded-md border border-transparent bg-primary text-white hover:brightness-95 transition"
+                                                            aria-label={`Contact about ${proj.title}`}
+                                                        >
+                                                            Get in Touch
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+
+                            {/* Navigation arrows */}
+                            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:flex h-10 w-10 bg-background/80 backdrop-blur-sm border shadow-md hover:bg-background" />
+                            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:flex h-10 w-10 bg-background/80 backdrop-blur-sm border shadow-md hover:bg-background" />
+                        </Carousel>
+
+                        {/* simple indicators */}
+                        <div className="mt-6 flex items-center justify-center gap-2">
+                            {projects.map((_, i) => (
+                                <span
+                                    key={i}
+                                    className="h-2 w-8 rounded-full bg-background/60 opacity-60"
+                                    aria-hidden
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
