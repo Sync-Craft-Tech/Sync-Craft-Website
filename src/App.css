@@ -1,0 +1,100 @@
+/* animation settings */
+:root {
+    --bg-speed: 7s;
+    /* overall pulse duration */
+    --bg-easing: ease-in-out;
+    --bg-min: 0.12;
+    /* minimum opacity for "off" */
+    --bg-max: 1;
+    /* maximum opacity for "on" */
+    --bg-scroll-range: 60px;
+    /* how far the background moves vertically */
+    --bg-scroll-speed: 15s;
+    /* duration of one full up/down cycle */
+    --bg-scroll-easing: linear;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#background-svg {
+    will-change: transform;
+    transform-origin: center;
+    animation: bg-scroll var(--bg-scroll-speed) var(--bg-scroll-easing) infinite;
+}
+
+/* keyframes used for pulsing */
+@keyframes bg-block-pulse {
+    0% {
+        opacity: var(--bg-min);
+    }
+
+    50% {
+        opacity: var(--bg-max);
+    }
+
+    100% {
+        opacity: var(--bg-min);
+    }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+
+    #background-svg,
+    #background-svg rect,
+    #background-svg g {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@keyframes bg-scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(calc(-1 * var(--bg-scroll-range)));
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Target the rects that use the colored patterns (e, f, g) and pulse them slowly.
+   Stagger delays so blocks alternate over time. */
+#background-svg rect[fill="url(#e)"],
+#background-svg rect[fill="url(#f)"],
+#background-svg rect[fill="url(#g)"] {
+    will-change: opacity;
+    opacity: var(--bg-min);
+}
+
+/* Group-specific timing to create a slow alternating effect */
+#background-svg rect[fill="url(#e)"] {
+    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
+    animation-delay: 0s;
+}
+
+#background-svg rect[fill="url(#f)"] {
+    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
+    animation-delay: calc(var(--bg-speed) * 0.25);
+}
+
+#background-svg rect[fill="url(#g)"] {
+    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
+    animation-delay: calc(var(--bg-speed) * 0.5);
+}
+
+/* Optionally pulse lighter pattern groups more subtly */
+#background-svg rect[fill="url(#a)"],
+#background-svg rect[fill="url(#b)"],
+#background-svg rect[fill="url(#c)"],
+#background-svg rect[fill="url(#d)"] {
+    animation: bg-block-pulse calc(var(--bg-speed) * 1.6) var(--bg-easing) infinite;
+    animation-delay: calc(var(--bg-speed) * 0.9);
+    opacity: calc(var(--bg-min) + 0.05);
+}
