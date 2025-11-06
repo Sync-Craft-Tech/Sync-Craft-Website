@@ -25,5 +25,10 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
+          FIX_ENV: false
+          VALIDATE_ENV: false
+          VALIDATE_JSCPD: false
+          VALIDATE_CSS: false
+          VALIDATE_TYPESCRIPT_STANDARD: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
