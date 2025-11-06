@@ -15,7 +15,7 @@ import { Link, useNavigate } from "react-router";
 const navigationItems = [
     { title: 'Services', Location: 'Services' },
     { title: 'About', Location: 'About' },
-    { title: 'Contact', Location: '#Contact' },
+    { title: 'Contact', Location: '/#Contact' },
 ];
 
 const NavbarComponents = () => {
@@ -51,7 +51,7 @@ const NavbarComponents = () => {
                     {/* Desktop CTA + Mobile Trigger */}
                     <div className="flex items-center gap-4">
                         <Button className="hidden md:inline-flex" onClick={() => {
-                            navigate("/#Contact");
+                            navigate(import.meta.env.BASE_URL + "/#Contact");
                             document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' });
                         }}>Contact Us</Button>
 
