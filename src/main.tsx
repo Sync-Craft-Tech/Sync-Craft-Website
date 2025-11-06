@@ -10,7 +10,7 @@ import AboutPages from './pages/about.pages.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename= import.meta.env.BASE_URL>
+    <BrowserRouter basename= {import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<MainLayout><App /></MainLayout>} />
           <Route path="/About" element={<MainLayout><AboutPages /></MainLayout>} />
