@@ -15,7 +15,7 @@ import { Link, useNavigate } from "react-router";
 const navigationItems = [
     { title: 'Services', Location: 'Services' },
     { title: 'About', Location: 'About' },
-    { title: 'Contact', Location: '/#Contact' },
+    { title: 'Contact', Location: `${import.meta.env.BASE_URL}#Contact` },
 ];
 
 const NavbarComponents = () => {
