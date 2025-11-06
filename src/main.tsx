@@ -7,7 +7,6 @@ import MainLayout from './layouts/main.layouts.tsx'
 import ServicesPages from './pages/services.pages.tsx'
 import AboutPages from './pages/about.pages.tsx'
 
-
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL}>
