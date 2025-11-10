@@ -43,7 +43,7 @@ function App() {
                       <circle cx="50" cy="50" r="50" className="text-primary opacity-10" fill="currentColor" />
                       <circle cx="50" cy="50" r="32" className="text-primary" fill="currentColor" />
                     </svg>
-                    <p className="text-muted-foreground"> ---INSERT SOME IMAGE/LOGO---</p>
+                    <p className="text-muted-foreground"> ---INSERT SOME IMAGE/LOGO like really man, its been 2 weeks :---</p>
                   </div>
                 </div>
               </div>
