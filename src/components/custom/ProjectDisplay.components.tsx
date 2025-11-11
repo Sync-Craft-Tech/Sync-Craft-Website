@@ -80,10 +80,13 @@ const ProjectDisplayComponents = () => {
                                 {projects.map((proj, idx) => (
                                     <CarouselItem
                                         key={idx}
-                                        className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3 transition-transform duration-500"
+                                        //"will-change-transform" and "transform: translate3d(0,0,0)" help with performance and reduce jitter by enabling GPU acceleration. Hopefully this will fix the jumping issue. 
+                                        className="pl-2 md:pl-4 basis-[85%] sm:basis-1/2 lg:basis-1/3 transition-transform duration-500 will-change-transform"
                                         style={{
-                                            transform: 'translateZ(0)',
-                                            opacity: 1,
+                                            transform: 'translate3d(0, 0, 0)',
+                                            //this is to hide any flickering during transitions
+                                            backfaceVisibility: 'hidden',
+                                            perspective: '1000px',
                                         }}
                                     >
                                         <Card className="h-full overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
