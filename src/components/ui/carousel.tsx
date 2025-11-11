@@ -1,9 +1,6 @@
 import * as React from "react"
-import useEmblaCarousel, {
-  type UseEmblaCarouselType,
-} from "embla-carousel-react"
+import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
@@ -32,11 +29,7 @@ const CarouselContext = React.createContext<CarouselContextProps | null>(null)
 
 function useCarousel() {
   const context = React.useContext(CarouselContext)
-
-  if (!context) {
-    throw new Error("useCarousel must be used within a <Carousel />")
-  }
-
+  if (!context) throw new Error("useCarousel must be used within a <Carousel />")
   return context
 }
 
@@ -52,11 +45,12 @@ function Carousel({
   const [carouselRef, api] = useEmblaCarousel(
     {
       loop: true,
-      ... opts,
+      ...opts,
       axis: orientation === "horizontal" ? "x" : "y",
     },
     plugins
   )
+
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(false)
 
@@ -66,30 +60,11 @@ function Carousel({
     setCanScrollNext(api.canScrollNext())
   }, [])
 
-  const scrollPrev = React.useCallback(() => {
-    api?.scrollPrev()
-  }, [api])
-
-  const scrollNext = React.useCallback(() => {
-    api?.scrollNext()
-  }, [api])
-
-  const handleKeyDown = React.useCallback(
-    (event: React.KeyboardEvent<HTMLDivElement>) => {
-      if (event.key === "ArrowLeft") {
-        event.preventDefault()
-        scrollPrev()
-      } else if (event.key === "ArrowRight") {
-        event.preventDefault()
-        scrollNext()
-      }
-    },
-    [scrollPrev, scrollNext]
-  )
+  const scrollPrev = React.useCallback(() => api?.scrollPrev(), [api])
+  const scrollNext = React.useCallback(() => api?.scrollNext(), [api])
 
   React.useEffect(() => {
-    if (!api || !setApi) return
-    setApi(api)
+    if (api && setApi) setApi(api)
   }, [api, setApi])
 
   React.useEffect(() => {
@@ -97,9 +72,9 @@ function Carousel({
     onSelect(api)
     api.on("reInit", onSelect)
     api.on("select", onSelect)
-
     return () => {
       api?.off("select", onSelect)
+      api?.off("reInit", onSelect)
     }
   }, [api, onSelect])
 
@@ -107,10 +82,9 @@ function Carousel({
     <CarouselContext.Provider
       value={{
         carouselRef,
-        api: api,
+        api,
         opts,
-        orientation:
-          orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+        orientation: orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
         scrollPrev,
         scrollNext,
         canScrollPrev,
@@ -118,7 +92,15 @@ function Carousel({
       }}
     >
       <div
-        onKeyDownCapture={handleKeyDown}
+        onKeyDownCapture={(e) => {
+          if (e.key === "ArrowLeft") {
+            e.preventDefault()
+            scrollPrev()
+          } else if (e.key === "ArrowRight") {
+            e.preventDefault()
+            scrollNext()
+          }
+        }}
         className={cn("relative", className)}
         role="region"
         aria-roledescription="carousel"
@@ -137,15 +119,19 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       ref={carouselRef}
-      className="overflow-hidden will-change-transform"
-      data-slot="carousel-content"
+      className="overflow-hidden will-change-transform [transform-style:preserve-3d] [backface-visibility:hidden]"
     >
+
       <div
         className={cn(
-          "flex",
+          "flex will-change-transform contain-layout contain-paint",
           orientation === "horizontal" ? "-ml-4" : "-mt-4 flex-col",
           className
         )}
+        style={{
+          transform: "translate3d(0,0,0)",
+          backfaceVisibility: "hidden",
+        }}
         {...props}
       />
     </div>

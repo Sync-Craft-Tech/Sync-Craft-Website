@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.embla__container {
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  will-change: transform;
+  contain: layout paint size;
+}
+
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
