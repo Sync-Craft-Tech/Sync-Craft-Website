@@ -67,6 +67,9 @@ const ProjectDisplayComponents = () => {
                                 align: 'start',
                                 loop: true,
                                 containScroll: 'trimSnaps',
+                                //this helps reduce jitter while the carousel is scrolling
+                                watchDrag: true,
+                                skipSnaps: false,
                             }}
                             plugins={[
                                 Autoplay({
