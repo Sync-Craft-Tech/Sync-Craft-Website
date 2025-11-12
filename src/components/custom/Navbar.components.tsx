@@ -10,7 +10,9 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
+
+import logo from "../../assets/logo/SyncCraft-logo.svg";
 
 const navigationItems = [
     { title: 'Services', Location: 'Services' },
@@ -28,7 +30,10 @@ const NavbarComponents = () => {
                 <div className="flex h-16 items-center justify-between px-4 md:px-6">
                     {/* Logo */}
                     <Link to="/#Home" className="flex items-center space-x-2">
-                        <div className="h-8 w-8 rounded-lg bg-primary" />
+                        <img 
+                        src={logo}
+                        alt="SyncCraft logo"
+                        className="h-8 w-8 object-contain"/>
                         <span className="text-xl font-bold">SyncCraft</span>
                     </Link>
 
