@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
-import logo from "../../assets/logo/SyncCraft-logo.svg";
+import logo from "/SyncCraft-logo.svg";
 
 const navigationItems = [
     { title: 'Services', Location: 'Services' },
