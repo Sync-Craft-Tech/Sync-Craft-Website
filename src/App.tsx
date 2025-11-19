@@ -2,7 +2,8 @@ import './App.css'
 
 
 import ContactUsComponents from './components/custom/ContactUs.components';
-import ProjectDisplayComponents from './components/custom/ProjectDisplay.components';
+//import ProjectDisplayComponents from './components/custom/ProjectDisplay.components';
+import ServicesComponent from './components/custom/Services.components';
 import logo from "/SyncCraft-logo.svg";
 
 function App() {
@@ -135,7 +136,7 @@ function App() {
                     <img src={logo}  alt="SyncCraft Logo" className="h-50 w-50 mx-auto animate-bounce"/>
 
                 
-                    <p className="text-muted-foreground"> ---INSERT SOME IMAGE/LOGO---</p>
+                    {/* I removed the palceholder paragraph for the image/logo */}
                   </div>
                 </div>
               </div>
@@ -144,9 +145,9 @@ function App() {
         </div>
       </section>
 
-      
-      {/* Project Display Section*/}
-      <ProjectDisplayComponents />
+      {/* Services Sections */}
+      <ServicesComponent />
+      {/* Removed the Project Display Section*/}
       {/* Contact Section */}
       <ContactUsComponents />
     </>
