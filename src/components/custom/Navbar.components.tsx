@@ -10,7 +10,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "/SyncCraft-logo.svg";
 
@@ -20,7 +20,7 @@ const navigationItems = [
 
 const NavbarComponents = () => {
     const [isOpen, setIsOpen] = React.useState(false);
-    const navigate = useNavigate();
+    //I removed the useNavigate state, because I realized its not necessary to use it with smooth scrolling. Lowkey just uncessarily complicating the codebase
     return (
         <>
             {/* ====================== NAVBAR ====================== */}
@@ -58,7 +58,6 @@ const NavbarComponents = () => {
                     {/* Desktop CTA + Mobile Trigger */}
                     <div className="flex items-center gap-4">
                         <Button className="hidden md:inline-flex" onClick={() => {
-                            navigate(import.meta.env.BASE_URL + "/#Contact");
                             document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' });
                         }}>Contact Us</Button>
 
@@ -104,7 +103,7 @@ const NavbarComponents = () => {
                                         </Link>
                                     ))}
                                     <Button className="mt-6 w-full" onClick={() => {
-                                        /*setIsOpen(false);*/
+                                        setIsOpen(false);
                                         document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' });
                                         
                                     }}>Contact Us</Button>
