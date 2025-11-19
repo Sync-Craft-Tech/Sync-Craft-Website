@@ -147,7 +147,6 @@ function App() {
 
       {/* Services Sections */}
       <ServicesComponent />
-      {/* Removed the Project Display Section*/}
       {/* Contact Section */}
       <ContactUsComponents />
     </>
