@@ -1,119 +1,118 @@
-import './App.css'
+// ===========================================
+// Imports
+// ===========================================
+import React, { useRef, useEffect } from 'react';
+import './App.css';
 
-
+// Sections used in the page
 import ContactUsComponents from './components/custom/ContactUs.components';
-//import ProjectDisplayComponents from './components/custom/ProjectDisplay.components';
 import ServicesComponent from './components/custom/Services.components';
+
+// The inline animated CPU SVG component
+import CncSvg from './components/custom/CncSvg';
+
+// SyncCraft logo (placed inside CPU box)
 import logo from "/SyncCraft-logo.svg";
 
+
 function App() {
+  const heroRef = useRef<HTMLDivElement | null>(null);        // hero wrapper (for scroll)
+  const rafRef = useRef<number | null>(null);
+  const pointerRef = useRef({ x: 0, y: 0 });
+  const scrollRef = useRef({ y: 0 });
+
+  useEffect(() => {
+    const wrapper = heroRef.current;
+    if (!wrapper) return;
+
+    const tiltMax = 8;
+    const translateMax = 18;
+
+    const onMouseMove = (ev: MouseEvent) => {
+      const rect = wrapper.getBoundingClientRect();
+      const relX = (ev.clientX - rect.left) / rect.width;
+      const relY = (ev.clientY - rect.top) / rect.height;
+      pointerRef.current.x = (relX - 0.5) * 2;
+      pointerRef.current.y = (relY - 0.5) * 2;
+      scheduleUpdate();
+    };
+    const onTouchMove = (ev: TouchEvent) => {
+      if (!ev.touches || ev.touches.length === 0) return;
+      const t = ev.touches[0];
+      onMouseMove(t as unknown as MouseEvent);
+    };
+    const onScroll = () => {
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const sc = docHeight > 0 ? window.scrollY / docHeight : 0;
+      scrollRef.current.y = sc;
+      scheduleUpdate();
+    };
+
+    const doUpdate = () => {
+      rafRef.current = null;
+      const px = pointerRef.current.x;
+      const py = pointerRef.current.y;
+      const sc = scrollRef.current.y;
+
+      const tiltX = (-py * tiltMax).toFixed(2) + 'deg';
+      const tiltY = (px * tiltMax).toFixed(2) + 'deg';
+      const translateY = ((sc - 0.5) * 2 * translateMax).toFixed(2) + 'px';
+      const scale = (1 + Math.abs(px) * 0.02 + Math.abs(py) * 0.02).toFixed(3);
+
+      // Write variables on the hero wrapper so CSS can use them
+      wrapper.style.setProperty('--cpu-tilt-x', tiltX);
+      wrapper.style.setProperty('--cpu-tilt-y', tiltY);
+      wrapper.style.setProperty('--cpu-translate-y', translateY);
+      wrapper.style.setProperty('--cpu-scale', scale);
+    };
+
+    const scheduleUpdate = () => {
+      if (rafRef.current == null) rafRef.current = requestAnimationFrame(doUpdate);
+    };
+
+    wrapper.addEventListener('mousemove', onMouseMove, { passive: true });
+    wrapper.addEventListener('touchmove', onTouchMove, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    onScroll();
+
+    return () => {
+      wrapper.removeEventListener('mousemove', onMouseMove);
+      wrapper.removeEventListener('touchmove', onTouchMove);
+      window.removeEventListener('scroll', onScroll);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
 
   return (
     <>
-
       {/* ====================== HERO ====================== */}
-      <section id="Home"className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-        <div className="hero px-4 md:px-6">
-          <div className="absolute z-0 inset-0 overflow-hidden opacity-20">
-            <svg id="background-svg" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'><rect fill='#ffffff' width='2000' height='1500' />
-              <defs>
-                <rect stroke='#ffffff' stroke-width='0.4' width='1' height='1' id='s' />
-                  <pattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                    <use fill='#fcfcfc' href='#s' y='2' /><use fill='#fcfcfc' href='#s' x='1' y='2' />
-                    <use fill='#fafafa' href='#s' x='2' y='2' /><use fill='#fafafa' href='#s' /><use fill='#f7f7f7' href='#s' x='2' />
-                    <use fill='#f7f7f7' href='#s' x='1' y='1' />
-                  </pattern>
-                  <pattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                    <g fill='#f5f5f5'><use href='#s' />
-                      <use href='#s' y='5' /><use href='#s' x='1' y='10' /><use href='#s' x='2' y='1' />
-                      <use href='#s' x='2' y='4' />
-                      <use href='#s' x='3' y='8' />
-                      <use href='#s' x='4' y='3' />
-                      <use href='#s' x='4' y='7' />
-                      <use href='#s' x='5' y='2' />
-                      <use href='#s' x='5' y='6' />
-                      <use href='#s' x='6' y='9' />
-                    </g>
-                  </pattern>
-                  <pattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                    <g fill='#f5f5f5'>
-                      <use href='#s' y='5' />
-                      <use href='#s' y='8' />
-                      <use href='#s' x='1' y='1' />
-                      <use href='#s' x='1' y='9' />
-                      <use href='#s' x='1' y='12' />
-                      <use href='#s' x='2' />
-                      <use href='#s' x='2' y='4' />
-                      <use href='#s' x='3' y='2' />
-                      <use href='#s' x='3' y='6' />
-                      <use href='#s' x='3' y='11' />
-                      <use href='#s' x='4' y='3' />
-                      <use href='#s' x='4' y='7' />
-                      <use href='#s' x='4' y='10' />
-                    </g>
-                    </pattern>
-                    <pattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                      <g fill='#f2f2f2'>
-                        <use href='#s' y='11' />
-                        <use href='#s' x='2' y='9' />
-                        <use href='#s' x='5' y='12' />
-                        <use href='#s' x='9' y='4' />
-                        <use href='#s' x='12' y='1' />
-                        <use href='#s' x='16' y='6' />
-                      </g>
-                    </pattern>
-                    <pattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                      <g fill='#ffffff'>
-                        <use href='#s' y='9' />
-                        <use href='#s' x='16' y='5' />
-                        <use href='#s' x='14' y='2' />
-                        <use href='#s' x='11' y='11' />
-                        <use href='#s' x='6' y='14' />
-                      </g>
-                      <g fill='#efefef'>
-                        <use href='#s' x='3' y='13' />
-                        <use href='#s' x='9' y='7' /><use href='#s' x='13' y='10' />
-                        <use href='#s' x='15' y='4' /><use href='#s' x='18' y='1' />
-                      </g>
-                    </pattern>
-                    <pattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                      <g fill='#1E313F'>
-                      <use href='#s' x='2' y='5' />
-                      <use href='#s' x='16' y='38' />
-                      <use href='#s' x='46' y='42' />
-                      <use href='#s' x='29' y='20' />
-                      </g>
-                    </pattern>
-                    <pattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                      <g fill='#1E313F'>
-                        <use href='#s' x='33' y='13' />
-                        <use href='#s' x='27' y='54' />
-                        <use href='#s' x='55' y='55' />
-                      </g>
-                    </pattern>
-                    <pattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='rotate(29 1000 750) scale(28.65) translate(-965.1 -723.82)'>
-                      <g fill='#1E313F'>
-                        <use href='#s' x='11' y='8' />
-                        <use href='#s' x='51' y='13' />
-                        <use href='#s' x='17' y='73' />
-                        <use href='#s' x='99' y='57' />
-                      </g>
-                    </pattern>
-                </defs>
-                <rect fill='url(#a)' width='100%' height='100%' />
-                <rect fill='url(#b)' width='100%' height='100%' />
-                <rect fill='url(#h)' width='100%' height='100%' />
-                <rect fill='url(#c)' width='100%' height='100%' />
-                <rect fill='url(#d)' width='100%' height='100%' />
-                <rect fill='url(#e)' width='100%' height='100%' />
-                <rect fill='url(#f)' width='100%' height='100%' />
-                <rect fill='url(#g)' width='100%' height='100%' />
-            </svg>
-          </div>
+      <section
+        id="Home"
+        className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative overflow-hidden"
+        ref={heroRef} /* hero wrapper - JS writes CSS variables here */
+      >
 
+        {/* Full-hero CncSvg background (fills entire hero) */}
+        <div className="absolute z-0 pointer-events-none"
+        style={{
+          top: "-900px",     // move up/down (+ is down)
+          left: "-200px",    // move left/right (+ is right)
+          width: "170%",     // scale wider
+          height: "140%",    // scale taller
+        }}>
+          {/* Inline component (preferred so colors/animation remain editable) */}
+          <CncSvg primaryColor="#3f5787" size="100%" className="w-full h-full hero-svg" />
+
+          
+        </div>
+
+        {/* Foreground hero content */}
+        <div className="hero px-4 md:px-6 relative z-10">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+
+            {/* LEFT column: Added hero text block (user provided) */}
             <div className="flex flex-col justify-center space-y-4">
-              
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Build Something
@@ -125,24 +124,32 @@ function App() {
                   and style.
                 </p>
               </div>
-
             </div>
 
+            {/* RIGHT column: Removed CPU box. Instead, keep an empty area (logo is centered over the SVG globally) */}
             <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-md">
-                <div className="absolute inset-0 bg-primary/20 blur-3xl" />
-                <div className="relative bg-muted border-2 border-dashed rounded-xl w-full h-96 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <img src={logo}  alt="SyncCraft Logo" className="h-50 w-50 mx-auto animate-bounce"/>
-
-                
-                    {/* I removed the palceholder paragraph for the image/logo */}
-                  </div>
-                </div>
+              <div className="relative w-full max-w-3xl">
               </div>
             </div>
+
           </div>
         </div>
+
+        {/* Center the SyncCraft logo in the hero (absolute centered) */}
+        <img
+        src={logo}
+        alt="SyncCraft Logo"
+        className="absolute logo-pulse sync-logo"
+        style={{
+          top: "28%",     // vertical movement
+          left: "64%",    // horizontal movement
+          width: 180,
+          height: 180,
+          position: "absolute",
+          transform: "translate(-50%, -50%)",
+          pointerEvents: "none"
+        }}
+      />
       </section>
 
       {/* Services Sections */}
@@ -153,4 +160,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

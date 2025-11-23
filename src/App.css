@@ -1,100 +1,77 @@
-/* animation settings */
-:root {
-    --bg-speed: 7s;
-    /* overall pulse duration */
-    --bg-easing: ease-in-out;
-    --bg-min: 0.12;
-    /* minimum opacity for "off" */
-    --bg-max: 1;
-    /* maximum opacity for "on" */
-    --bg-scroll-range: 60px;
-    /* how far the background moves vertically */
-    --bg-scroll-speed: 15s;
-    /* duration of one full up/down cycle */
-    --bg-scroll-easing: linear;
+/* App.css additions - paste near your other hero/background styles */
+
+/* CPU wrapper variables defaults */
+.cpu-box {
+  --cpu-tilt-x: 0deg;
+  --cpu-tilt-y: 0deg;
+  --cpu-translate-y: 0px;
+  --cpu-scale: 3;
+  perspective: 1200px; /* gives a subtle 3D depth */
+  will-change: transform;
 }
 
-html {
-    scroll-behavior: smooth;
+/* apply 3D tilt + translate based on vars */
+.cpu-svg-wrapper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1);
+  position: absolute;
+  inset: 0;
+  /* Note: transform order: translate then rotate then scale */
+  transform:
+    translateY(var(--cpu-translate-y))
+    rotateX(var(--cpu-tilt-x))
+    rotateY(var(--cpu-tilt-y))
+    scale(var(--cpu-scale));
+
+  will-change: transform;
 }
 
-#background-svg {
-    will-change: transform;
-    transform-origin: center;
-    animation: bg-scroll var(--bg-scroll-speed) var(--bg-scroll-easing) infinite;
-}
-
-/* keyframes used for pulsing */
-@keyframes bg-block-pulse {
-    0% {
-        opacity: var(--bg-min);
-    }
-
-    50% {
-        opacity: var(--bg-max);
-    }
-
-    100% {
-        opacity: var(--bg-min);
-    }
-}
-
-/* Respect users who prefer reduced motion */
+/* Slight extra smoothing for mobile */
 @media (prefers-reduced-motion: reduce) {
-
-    #background-svg,
-    #background-svg rect,
-    #background-svg g {
-        animation: none !important;
-        transition: none !important;
-    }
+  .cpu-svg-wrapper {
+    transition: none;
+  }
 }
 
-@keyframes bg-scroll {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(calc(-1 * var(--bg-scroll-range)));
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+/* SyncCraft logo strong pulse + glow */
+.sync-logo {
+  z-index: 30;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
 }
 
-/* Target the rects that use the colored patterns (e, f, g) and pulse them slowly.
-   Stagger delays so blocks alternate over time. */
-#background-svg rect[fill="url(#e)"],
-#background-svg rect[fill="url(#f)"],
-#background-svg rect[fill="url(#g)"] {
-    will-change: opacity;
-    opacity: var(--bg-min);
+/* stronger glow pulse */
+@keyframes logo-pulse-glow {
+  0% {
+    transform: translateZ(0) scale(1);
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)) drop-shadow(0 0 6px rgba(63,87,135,0.15));
+  }
+  50% {
+    transform: translateZ(10px) scale(1.06);
+    filter: drop-shadow(0 12px 36px rgba(0,0,0,0.55)) drop-shadow(0 0 20px rgba(63,87,135,0.55));
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45)) drop-shadow(0 0 6px rgba(63,87,135,0.15));
+  }
 }
 
-/* Group-specific timing to create a slow alternating effect */
-#background-svg rect[fill="url(#e)"] {
-    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
-    animation-delay: 0s;
+.logo-pulse {
+  animation: logo-pulse-glow 2.4s ease-in-out infinite;
+  transition: transform 160ms ease, filter 160ms ease;
+  border-radius: 8px;
+  /* optionally add a subtle background so logo glows better on any color */
+  background: rgba(255,255,255,0.02);
+  padding: 6px;
 }
 
-#background-svg rect[fill="url(#f)"] {
-    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
-    animation-delay: calc(var(--bg-speed) * 0.25);
-}
-
-#background-svg rect[fill="url(#g)"] {
-    animation: bg-block-pulse var(--bg-speed) var(--bg-easing) infinite;
-    animation-delay: calc(var(--bg-speed) * 0.5);
-}
-
-/* Optionally pulse lighter pattern groups more subtly */
-#background-svg rect[fill="url(#a)"],
-#background-svg rect[fill="url(#b)"],
-#background-svg rect[fill="url(#c)"],
-#background-svg rect[fill="url(#d)"] {
-    animation: bg-block-pulse calc(var(--bg-speed) * 1.6) var(--bg-easing) infinite;
-    animation-delay: calc(var(--bg-speed) * 0.9);
-    opacity: calc(var(--bg-min) + 0.05);
+/* When user prefers reduced motion, stop animation */
+@media (prefers-reduced-motion: reduce) {
+  .logo-pulse {
+    animation: none;
+    filter: none;
+    transform: none;
+  }
 }
