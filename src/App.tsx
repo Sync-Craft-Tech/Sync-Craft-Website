@@ -87,70 +87,110 @@ function App() {
   return (
     <>
       {/* ====================== HERO ====================== */}
-      <section
-        id="Home"
-        className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative overflow-hidden"
-        ref={heroRef} /* hero wrapper - JS writes CSS variables here */
-      >
+{/* ====================== HERO ====================== */}
+<section
+  id="Home"
+  className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative overflow-hidden"
+  ref={heroRef}
+>
+  {/* Grid Content */}
+  <div className="hero px-4 md:px-6 relative z-10">
+    <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
 
-        {/* Full-hero CncSvg background (fills entire hero) */}
-        <div className="absolute z-0 pointer-events-none"
-        style={{
-          top: "-900px",     // move up/down (+ is down)
-          left: "-200px",    // move left/right (+ is right)
-          width: "170%",     // scale wider
-          height: "140%",    // scale taller
-        }}>
-          {/* Inline component (preferred so colors/animation remain editable) */}
-          <CncSvg primaryColor="#3f5787" size="100%" className="w-full h-full hero-svg" />
-
-          
+      {/* LEFT column: Hero text */}
+      {/* Added z-20 to ensure text sits ON TOP of the circuit lines */}
+      <div className="flex flex-col justify-center space-y-4 relative z-20">
+        <div className="space-y-2">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            Build Something
+            <span className="text-primary"> Amazing</span> Today
+          </h1>
+          <p className="max-w-[600px] text-muted-foreground md:text-xl">
+            Create beautiful, modern applications with our powerful
+            platform. Start building your next big idea with confidence
+            and style.
+          </p>
         </div>
+      </div>
 
-        {/* Foreground hero content */}
-        <div className="hero px-4 md:px-6 relative z-10">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+      {/* RIGHT column: The "Canvas" Container */}
+      <div className="flex items-center justify-center relative z-10">
+        
+        {/* THE MOVABLE STAGE 
+           This div handles the 3D Tilt. Everything inside moves together.
+           Adjust h-[...] to make the touch area larger/smaller.
+        */}
+        <div 
+          className="relative w-full max-w-[600px] h-[500px]"
+          style={{
+            transformStyle: 'preserve-3d',
+            transform: `
+              perspective(1000px)
+              rotateX(var(--cpu-tilt-x))
+              rotateY(var(--cpu-tilt-y))
+              translateY(var(--cpu-translate-y))
+              scale(var(--cpu-scale))
+            `,
+            // Smooths out the movement slightly
+            transition: 'transform 0.1s ease-out' 
+          }}
+        >
 
-            {/* LEFT column: Added hero text block (user provided) */}
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Build Something
-                  <span className="text-primary"> Amazing</span> Today
-                </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Create beautiful, modern applications with our powerful
-                  platform. Start building your next big idea with confidence
-                  and style.
-                </p>
-              </div>
-            </div>
-
-            {/* RIGHT column: Removed CPU box. Instead, keep an empty area (logo is centered over the SVG globally) */}
-            <div className="flex items-center justify-center">
-              <div className="relative w-full max-w-3xl">
-              </div>
-            </div>
-
+          {/* =============================================== */}
+          {/* LAYER 1: THE SVG (Background Circuit)           */}
+          {/* =============================================== */}
+          <div 
+            className="absolute pointer-events-none"
+            style={{
+              // --- CONTROLS: MOVE THE SVG HERE ---
+              top: "80%",    // Anchor to vertical center
+              left: "50%",   // Anchor to horizontal center
+              width: "360%", // Make it larger than the box
+              height: "360%",
+              
+              // Use translate to fine-tune position relative to center
+              // Change scale() to zoom the circuit in/out
+              transform: "translate(-50%, -50%) scale(1.2)" 
+            }}
+          >
+            <CncSvg
+              primaryColor="#3f5787"
+              size="100%"
+              className="w-full h-full opacity-90"
+            />
           </div>
-        </div>
 
-        {/* Center the SyncCraft logo in the hero (absolute centered) */}
-        <img
-        src={logo}
-        alt="SyncCraft Logo"
-        className="absolute logo-pulse sync-logo"
-        style={{
-          top: "28%",     // vertical movement
-          left: "64%",    // horizontal movement
-          width: 180,
-          height: 180,
-          position: "absolute",
-          transform: "translate(-50%, -50%)",
-          pointerEvents: "none"
-        }}
-      />
-      </section>
+          {/* =============================================== */}
+          {/* LAYER 2: THE LOGO (Foreground)                  */}
+          {/* =============================================== */}
+          <img
+            src={logo}
+            alt="SyncCraft Logo"
+            className="sync-logo logo-pulse absolute z-20"
+            style={{
+              // --- CONTROLS: MOVE THE LOGO HERE ---
+              // 1. Set the size
+              width: "180px",
+              height: "180px",
+
+              // 2. Position relative to the container
+              top: "28%", 
+              left: "21%",
+
+              // 3. FINE TUNING:
+              // Use translate(Xpx, Ypx) to nudge the logo 
+              // until it fits perfectly into the 'socket' of the SVG.
+              // Example: translate(-50%, -60%) moves it UP slightly.
+              transform: "translate(-50%, -50%)" 
+            }}
+          />
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* Services Sections */}
       <ServicesComponent />
