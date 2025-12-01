@@ -21,21 +21,14 @@ const FooterComponents = () => {
                 <h3 className="text-sm font-semibold">{col}</h3>
                 <ul className="space-y-1">
                   {(col === 'Contact'
-                    ? ['Email', 'Phone', 'Address']
+                    ? ['admin@synccrafttech.online', '+27-66-102-4086']
                     : col === 'Company'
                       ? ['About']
                       : col === 'Legal'
                         ? ['Privacy', 'Terms', 'Cookie Policy']
                         : [])
                       .map((link) => (
-                        <li key={link}>
-                          <a
-                            href="#"
-                            className="text-sm text-muted-foreground hover:text-foreground"
-                          >
-                            {link}
-                          </a>
-                        </li>
+                        <li key={link} className="text-sm text-muted-foreground hover:text-foreground">{link}</li>
                     ))}
                 </ul>
               </div>
