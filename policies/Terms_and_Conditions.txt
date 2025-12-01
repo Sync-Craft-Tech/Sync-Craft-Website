@@ -1,0 +1,52 @@
+
+Terms and Conditions — Sync Craft Tech
+
+Last updated: 1 December 2025
+
+1. Acceptance of Terms
+By accessing or using any Sync Craft Tech services (web development, software development, mobile applications, databases, tech consultation, or our website), you agree to these Terms and Conditions.
+If you do not agree, please do not use our services.
+
+2. Services
+Sync Craft Tech provides the following services:
+- Web Development
+- Software Development
+- Mobile Application Development
+- Database Design, Maintenance & Optimisation
+- Technical Consulting
+We reserve the right to modify, add, or remove services at any time.
+
+3. Quotes, Payments & Project Work
+- All quotes are valid for 14 days, unless specified otherwise.
+- Work begins once the initial agreed deposit is received.
+- Final deliverables are provided upon full payment.
+- Late payments may delay project delivery.
+
+4. Intellectual Property
+- Unless otherwise agreed, Sync Craft Tech retains ownership of development frameworks, tools, or proprietary systems used in a project.
+- Once paid in full, clients receive full rights to the final product delivered (e.g., website files, application code, design assets), except licensed third-party components.
+
+5. Client Responsibilities
+Clients must provide complete and accurate information, timely content, and necessary approvals to ensure smooth project progress.
+Delays in feedback may extend the timeline.
+
+6. Limitation of Liability
+Sync Craft Tech is not liable for:
+- Loss of profits
+- Downtime caused by third-party systems
+- Security breaches from client mismanagement
+- Issues arising from unauthorised modifications
+Our liability is limited to the amount paid for the specific project or service.
+
+7. Confidentiality
+Both parties agree to keep all project-related information confidential unless written consent is provided.
+
+8. Termination
+We may terminate a project for non-payment, breach of terms, or unethical conduct.
+Clients may terminate at any time, but payments for completed work remain due.
+
+9. Governing Law
+These terms are governed by the laws of South Africa, unless otherwise agreed.
+
+10. Changes to Terms
+We may update these Terms and Conditions periodically. Updates will be posted on our website.

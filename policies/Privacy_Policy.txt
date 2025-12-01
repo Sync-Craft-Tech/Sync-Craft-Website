@@ -1,0 +1,54 @@
+
+Privacy Policy — Sync Craft Tech
+
+Last updated: 1 December 2025
+
+1. Introduction
+Sync Craft Tech (“we”, “our”, “us”) values your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and protect your data.
+
+2. Information We Collect
+We may collect the following types of data:
+Personal Information: Full name, Email address, Phone number, Company name, Billing details
+Technical Information: IP address, Browser type, Device information, Usage statistics (via analytics tools)
+Project-Related Information: Any content, documentation, or technical requirements you provide for development or consultation purposes.
+
+3. How We Use Your Information
+We use your information to:
+- Deliver development and consulting services
+- Provide quotes and invoices
+- Improve website performance
+- Communicate with clients
+- Maintain internal records
+- Ensure security and prevent fraud
+We do not sell or rent personal information to third parties.
+
+4. Sharing of Information
+We may share data with:
+- Service providers assisting with hosting, payments, or analytics
+- Legal authorities when required by law
+- Contractors working on your project (only with confidentiality agreements)
+
+5. Data Storage & Security
+We implement reasonable technical and organisational measures to protect your data.
+However, no system is 100% secure, and you acknowledge this risk when using our services.
+
+6. Your Rights
+You may request:
+- Access to your personal data
+- Correction of inaccurate information
+- Deletion of your data (where legally permissible)
+- Restriction of processing
+- Portability of your data
+To exercise these rights, contact us at [your business email].
+
+7. Data Retention
+We keep data only for as long as necessary for business, legal, and security purposes.
+
+8. Children’s Privacy
+We do not knowingly collect or process data from individuals under 18 years old.
+
+9. Third-Party Links
+Our website may contain links to external sites. We are not responsible for their content or privacy practices.
+
+10. Updates to This Privacy Policy
+We may update this policy occasionally. Revised versions will be posted on our website with updated effective dates.
