@@ -1,4 +1,3 @@
-import React from 'react';
 
 import PrivacyPolicy from '/policies/Privacy_Policy.txt';
 import TermsAndConditions from '/policies/Terms_and_Conditions.txt';
