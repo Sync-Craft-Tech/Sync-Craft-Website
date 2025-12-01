@@ -1,7 +1,5 @@
 import './App.css'
 
-
-import ContactUsComponents from './components/custom/ContactUs.components';
 //import ProjectDisplayComponents from './components/custom/ProjectDisplay.components';
 import ServicesComponent from './components/custom/Services.components';
 import logo from "/SyncCraft-logo.svg";
@@ -147,8 +145,7 @@ function App() {
 
       {/* Services Sections */}
       <ServicesComponent />
-      {/* Contact Section */}
-      <ContactUsComponents />
+      {/* I added the contact information inside the footer */}
     </>
   );
 }
