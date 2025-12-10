@@ -20,28 +20,34 @@ export default function HeroComponents() {
                 <div className="grid gap-12 lg:grid-cols-2 items-center">
 
                     {/* LEFT column: Hero text */}
-                    <div id = "Left-hero" 
-                    className="flex flex-col justify-center space-y-6 relative z-20 --background">
+                    <div 
+                    id="Left-hero"
+                    className="flex flex-col justify-center space-y-6 relative z-20"
+                    >
                         <div className="space-y-3">
                             <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                                 Build Something
                                 <span className="text-indigo-400"> Amazing</span> Today
                             </h1>
+
                             <p className="max-w-[700px] text-gray-400 md:text-xl leading-relaxed">
                                 Create beautiful, modern applications with our powerful
                                 platform. Start building your next big idea with confidence
                                 and style.
                             </p>
                         </div>
+
                         <div className="flex gap-4">
-                            <button className="px-6 py-3 text-lg font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.02]">
+                            <button className="hero-button px-6 py-3 text-lg font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl shadow-lg">
                                 Get Started
                             </button>
-                            <button className="px-6 py-3 text-lg font-semibold bg-gray-700 hover:bg-gray-600 text-white rounded-xl transition-all duration-300">
+
+                            <button className="hero-button px-6 py-3 text-lg font-semibold bg-gray-700 hover:bg-gray-600 text-white rounded-xl">
                                 Documentation
                             </button>
                         </div>
                     </div>
+
 
                     {/* RIGHT column: The "Canvas" Container (Static display) */}
                     <div  id = "Right-hero"
@@ -61,35 +67,14 @@ export default function HeroComponents() {
                                 `,
                             }}
                         >
-                            {/* LAYER 1: THE SVG (Background Circuit)           */}
-                            
-                            <div 
-                                className="absolute pointer-events-none w-[360%] h-[360%] flex justify-center items-center"
-                                style={{
-                                    top: "73%",
-                                    left: "50%",
-                                    transform: "translate(-50%, -50%) scale(1.2)" 
-                                }}
-                            >
-                                {/* The CncCableSvg component, dynamically colored */}
+                            {/* CPU SVG */}
+                            <div className="cpu-svg-wrapper">
                                 <CncCableSvg className="w-full h-full text-indigo-400" />
                             </div>
-                            {/* LAYER 2: THE LOGO (Foreground)                  */}
-                            <div
-                                className="logo-pulse absolute z-20"
-                                style={{
-                                    // Controls from original code:
-                                    width: "180px",
-                                    height: "180px",
-                                    top: "28%", 
-                                    left: "21%",
-                                    transform: "translate(-50%, -50%)" 
-                                }}
-                            >
-                                {/* The LogoSvg component */}
-                                <LogoSvg 
-                                    className="w-full h-full text-white drop-shadow-lg"
-                                />
+
+                            {/* Logo */}
+                            <div className="logo-wrapper logo-pulse">
+                                <LogoSvg className="w-full h-full logo-glow" />
                             </div>
 
                         </div>
