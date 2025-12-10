@@ -1,0 +1,1404 @@
+<?xml version="1.0" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="diagram-cnc-cpu-cabling" viewBox="0 0 5281 4448" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+<defs>
+    <linearGradient id="gradient-dark-metal-shadow" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+        <stop offset="0%" stop-color="#6c6e6b"/>
+        <stop offset="30.2885%" stop-color="#1e313f"/>
+    </linearGradient>
+    <linearGradient id="gradient-component-base-fill" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+        <stop offset="37.5%" stop-color="#1e313f"/>
+        <stop offset="61.5385%" stop-color="#eeddc3"/>
+        <stop offset="74.0385%" stop-color="#6c6e6b"/>
+    </linearGradient>
+    <linearGradient id="gradient-spark-right-stroke" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+        <stop offset="0%" stop-color="rgba(255,128,0,0.9)"/>
+        <stop offset="26.9231%" stop-color="rgba(255,166,0,0.8)"/>
+        <stop offset="45.6731%" stop-color="rgba(255,185,0,0.6)"/>
+        <stop offset="65.3846%" stop-color="rgba(255,194,0,0.4)"/>
+        <stop offset="88.9423%" stop-color="rgba(0,0,0,0.5)"/>
+    </linearGradient>
+    <linearGradient id="gradient-spark-left-stroke" gradientUnits="userSpaceOnUse" spreadMethod="pad">
+        <stop offset="10.5769%" stop-color="rgba(255,128,0,0.9)"/>
+        <stop offset="26.9231%" stop-color="rgba(255,172,0,0.8)"/>
+        <stop offset="44.7115%" stop-color="rgba(255,194,0,0.6)"/>
+        <stop offset="64.4231%" stop-color="rgba(255,206,0,0.4)"/>
+        <stop offset="79.3269%" stop-color="rgba(0,0,0,0.5)"/>
+    </linearGradient>
+    
+    <linearGradient id="stroke-spark-left" x1="4002" y1="343.5" x2="3966" y2="343.5" href="#gradient-spark-left-stroke"/>
+    <linearGradient id="stroke-spark-right" x1="4018.68" y1="343.961" x2="4054.98" y2="343.598" href="#gradient-spark-right-stroke"/>
+    <linearGradient id="fill-component-base" x1="4030.5" y1="165.359" x2="4030.5" y2="339" href="#gradient-component-base-fill"/>
+    <linearGradient id="fill-component-shading" x1="4030.5" y1="165.359" x2="4030.5" y2="339" href="#gradient-dark-metal-shadow"/>
+    
+    <path id="path-spark-left" d="M3985.53,330.945v-10.945m9.15,17.384l7.32-8.37m-7.32,19.959l7.32,7.726m-16.47,0v10.301m-11.6-18.027l-7.93,5.794m10.37-17.383l-7.93-8.37"/>
+    <path id="path-spark-right" d="M4037.94,330.34l-.37-10.909m9.82,16.985l7.1-8.614m-6.71,20.165l7.64,7.428m-16.61.612l.35,10.268m-12.3-17.537l-7.81,6.07m9.88-17.711l-8.29-8.048"/>
+    <path id="path-body-section-3" d="M4020.34,286.459l1.85-16.659h-25.86l1.84,16.659l3.08,3.845h16.63l2.46-3.845Z"/>
+    <path id="path-body-section-4" d="M4036.97,248.015v-12.815h-54.19v12.815l4.31,1.922h44.95l4.93-1.922Z"/>
+    <path id="path-body-section-5" d="M4048.05,233.278l1.85-17.3h-81.28l1.85,17.3l12.31,1.922h54.19l11.08-1.922Z"/>
+    <path id="path-body-section-6" d="M4030.19,266.596l1.85-16.659h-44.95l2.46,16.659l6.78,3.204h25.86l8-3.204Z"/>
+    <path id="path-body-section-7" d="M4001.25,290.304l1.85,12.174l6.47,3.203l7.08-3.203l1.23-12.174h-16.63Z"/>
+    <path id="path-shading-8" d="M4059.75,214.696l1.23-3.844v-41.648-1.282-1.922h-100.98v1.281.823v46.592l8.62,1.282h81.28l9.85-1.282Z"/>
+    <path id="path-shading-9" d="M4060.98,210.852l25.24-1.922l2.47-3.204v-36.522-1.282l-.01-1.922h-27.7v1.922v1.282v41.648Z"/>
+    <path id="path-shading-10" d="M4088.69,205.726l12.31-1.282v-35.24-1.282-1.922h-12.32l.01,1.922v1.282v36.522Z"/>
+    <path id="path-body-lines" d="M3960,166c55.06,0,85.94,0,141,0m-141,0h100.98M3960,166v1.281.823v46.592l8.62,1.282M4060.98,166h27.7m-27.7,0v1.922v1.282v41.648m0,0l-1.23,3.844-9.85,1.282m11.08-5.126l25.24-1.922l2.47-3.204M4088.68,166h12.32m-12.32,0l.01,1.922v1.282v36.522m0,0l12.31-1.282v-35.24-1.282-1.922m-51.1,49.978l-1.85,17.3-11.08,1.922m12.93-19.222h-81.28m0,0l1.85,17.3l12.31,1.922m54.19,0v12.815l-4.93,1.922m4.93-14.737h-54.19m0,0v12.815l4.31,1.922m44.95,0l-1.85,16.659-8,3.204m9.85-19.863h-44.95m0,0l2.46,16.659l6.78,3.204m25.86,0l-1.85,16.659-2.46,3.845m4.31-20.504h-25.86m0,0l1.84,16.659l3.08,3.845m0,0l1.85,12.174l6.47,3.203m-8.32-15.377h16.63m0,0l-1.23,12.174-7.08,3.203m0,0v33.319m14.46-140.322"/>
+    <path id="path-port-A1" d="M4024.03,198.678h6.16q-5.544,0-6.16,0Z"/>
+    <path id="path-port-A2" d="M4038.2,199.319h6.15q-5.535,0-6.15,0Z"/>
+    <path id="path-port-B1" d="M4024.03,189.067h6.16q-5.544,0-6.16,0Z"/>
+    <path id="path-port-B2" d="M4038.2,189.067h6.15q-5.535,0-6.15,0Z"/>
+    <path id="path-port-C1" d="M4024.03,178.815h6.16q-5.544,0-6.16,0Z"/>
+    <path id="path-port-C2" d="M4038.2,178.815h6.15q-5.535,0-6.15,0Z"/>
+    <path id="path-port-round-base" d="M3998,187.5c0,7.456-5.82,13.5-13,13.5s-13-6.044-13-13.5s5.82-13.5,13-13.5s13,6.044,13,13.5Zm-21.29,0c0,4.753,3.71,8.605,8.29,8.605s8.29-3.852,8.29-8.605-3.71-8.605-8.29-8.605-8.29,3.852-8.29,8.605Z"/>
+
+    <g id="group-spark-details">
+        <use href="#path-spark-left" xlink:href="#path-spark-left" fill="none" stroke="url(#stroke-spark-left)" stroke-width="4"/>
+        <use href="#path-spark-right" xlink:href="#path-spark-right" fill="none" stroke="url(#stroke-spark-right)" stroke-width="4"/>
+    </g>
+    
+    <g id="group-main-component-body">
+        <use href="#path-body-section-3" xlink:href="#path-body-section-3" fill="url(#fill-component-base)"/>
+        <use href="#path-body-section-4" xlink:href="#path-body-section-4" fill="url(#fill-component-base)"/>
+        <use href="#path-body-section-5" xlink:href="#path-body-section-5" fill="url(#fill-component-base)"/>
+        <use href="#path-body-section-6" xlink:href="#path-body-section-6" fill="url(#fill-component-base)"/>
+        <use href="#path-body-section-7" xlink:href="#path-body-section-7" fill="url(#fill-component-base)"/>
+    </g>
+    
+    <g id="group-component-shading">
+        <use href="#path-shading-8" xlink:href="#path-shading-8" fill="url(#fill-component-shading)"/>
+        <use href="#path-shading-9" xlink:href="#path-shading-9" fill="url(#fill-component-shading)"/>
+        <use href="#path-shading-10" xlink:href="#path-shading-10" fill="url(#fill-component-shading)"/>
+    </g>
+    
+    <g id="group-component-ports">
+        <use href="#path-port-A1" xlink:href="#path-port-A1" fill="none" stroke="#fff" stroke-width="3"/>
+        <use href="#path-port-A2" xlink:href="#path-port-A2" fill="none" stroke="#fff" stroke-width="3"/>
+        <use href="#path-port-B1" xlink:href="#path-port-B1" fill="none" stroke="#fffefe" stroke-width="3"/>
+        <use href="#path-port-B2" xlink:href="#path-port-B2" fill="none" stroke="#fff" stroke-width="3"/>
+        <use href="#path-port-C1" xlink:href="#path-port-C1" fill="none" stroke="#fbfbfb" stroke-width="3"/>
+        <use href="#path-port-C2" xlink:href="#path-port-C2" fill="none" stroke="#fff" stroke-width="3"/>
+        <use href="#path-port-round-base" xlink:href="#path-port-round-base" fill="#fff"/>
+    </g>
+    
+    <g id="component-cnc-unit">
+        <use href="#group-spark-details" xlink:href="#group-spark-details"/> 
+        <use href="#group-main-component-body" xlink:href="#group-main-component-body"/>
+        <use href="#group-component-shading" xlink:href="#group-component-shading"/>
+        <use href="#path-body-lines" xlink:href="#path-body-lines" fill="none" stroke="#000" stroke-width="3"/>
+        <use href="#group-component-ports" xlink:href="#group-component-ports"/>
+    </g>
+</defs>
+<g id = "cable-and-animated-out-loos-under">  
+  <g id="cable-and-animated-unit-76">
+        <path id="cable-path-76"       
+        d="M3732,2516c-.005-12.386668,7.910003-16.108331,14.950003-16.108331c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-5.87,0-14.408337-6.066668-15.075683-12.842191h-323.78l-1.35-1.03-77.65-59.47-303.15-1.28-216.7-194.88c-3.433234,4.120601-8.483952,4.889488-10.993952,4.889488-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5s15.020817,6.490027,15,14.5c-.006711,2.582257-2.057076,7.708168-4.10744,9.630384" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1203.03" stroke-dasharray="1203.03">
+            <animate attributeName="stroke-dashoffset" values="1203.03;1203.03;0; 0" keyTimes="0; 0.4; 0.75; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-76">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.4; 0.75; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-76"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.4; 0.75" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+  </g>    
+  <g id="cable-and-animated-unit-75">
+        <path id="cable-path-75"       
+        d="M3434,2673c-.254419-12.000376,7.659914-15.418225,14.319914-15.418225c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-6.27,0-13.434147-7.3814-14.307118-13.49451h-408.86c.480905,8.460242-7.454179,15.341919-14.114179,15.341919-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c6.27,0,14.444619,4.363478,13.993225,13.54183" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="591.45" stroke-dasharray="591.45">
+            <animate attributeName="stroke-dashoffset" values="591.45;591.45;0; 0" keyTimes="0; 0.6; 0.7; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-75">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.6; 0.7; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-75"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.6; 0.7" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+  </g>  
+  <g id="cable-and-animated-unit-74">
+        <path id="cable-path-74"       
+        d="M2910,2514c-9.530994.856918-15.480717-7.782246-15.480717-14.092246c0-8.01,6.72-14.5,15-14.5s15.175938,6.491933,15,14.5c-.206774,9.411608-9.14048,14.168244-14.828969,14.035586v281.19L3016,2897h268.24l54-61.5h173.84c-1.727336-7.276434,7.761555-14.614926,14.611555-14.614926c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-6.07,0-14.941208-4.772847-14.708261-14.323676" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1136.95" stroke-dasharray="1136.95">
+            <animate attributeName="stroke-dashoffset" values="1136.95;1136.95;0; 0" keyTimes="0; 0.2; 0.45; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-74">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.2; 0.45; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-74"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.2; 0.45" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+  </g>  
+  <g id="cable-and-animated-unit-73">
+        <path id="cable-path-73"       
+        d="M2220,2756c-11.335288,2.093966-15.950122-7.74721-15.950122-14.23721c0-8.01,6.72-14.5,15-14.5s15,6.49,15,14.5c0,6.13-5.619951,15.923195-14.048279,14.098915v113.51c1.44,1.91,1.33,4.63-.36,6.43l-65.16,69.08c.01.16.02.32.02.49v96.94l68.62,71.06h128.88c2.76,0,5,5.19,4.99,5.28l44.92,58.26c1.836921-2.700435,7.371983-3.067023,9.351983-3.067023c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5-15-6.49-15-14.5c0-2.51.703053-8.81788,5.83529-11.567293" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="808.58" stroke-dasharray="808.58">
+            <animate attributeName="stroke-dashoffset" values="808.58;808.58;0; 0" keyTimes="0; 0.75; 0.95; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-73">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.75; 0.95; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-73"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.75; 0.95" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+  </g>  
+  <g id="cable-and-animated-unit-72">
+        <path id="cable-path-72"       
+        d="M1759,2516c-9.515747.894498-15.480749-8.515729-15.480749-14.825729c0-8.01,6.72-14.5,15-14.5s15,6.49,15,14.5c0,6.31-6.506756,15.947478-14.452835,14.678484q.59,327.88.86,328.13c2.05,1.86,2.2,5.02.34,7.06l-63.7,70.12q-.01,101.43-.04,101.63l59.86,53.15l1.68,1.49v193.77c9.178632-.920387,16.15909,7.981405,16.15909,14.651405c0,8.01-6.72,14.5-15,14.5s-15-6.49-15-14.5c0-5.95,5.657889-14.855848,14.070236-14.676861" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1028.98" stroke-dasharray="1028.98">
+            <animate attributeName="stroke-dashoffset" values="1028.98;1028.98;0; 0" keyTimes="0; 0.2; 0.5; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-72">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.2; 0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-72"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.2; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+  </g>
+</g>  
+<g id = "cable-and-animated-out-loos-left">
+ 
+  <g id="cable-and-animated-unit-71">
+          <path id="cable-path-71"       
+          d="M1597,2812c.994956-8.598628,8.035354-13.506206,14.695354-13.506206c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-6.27,0-14.59885-6.615386-14.759514-15.509527h-124.91L1399,2904.24l-1.28,154.1-298.706,332.94c4.092044,2.24351,5.529779,8.768617,5.514417,11.721495-.041671,8.009892-6.716,14.5-15,14.5s-15-6.49-15-14.5s6.716-14.5,15-14.5c1.86,0,6.83133.045239,9.706801,2.69952" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1028.98" stroke-dasharray="1028.98">
+              <animate attributeName="stroke-dashoffset" values="1028.98;1028.98;0; 0" keyTimes="0; 0.45; 0.75; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-71">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.45; 0.75; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-71"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.45; 0.75" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>  
+  <g id="cable-and-animated-unit-70">
+          <path id="cable-path-70"       
+          d="M1484,2576c-2.905092-.988373-4.005775-7.221863-4.005775-9.591863c0-8.01,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-2.12,0-8.932808-1.07979-11.197396-5.036391L1357,2717.43l-1.34,302.48-187.63,201.45c2.944817,2.39399,4.015518,7.864758,4.015518,9.674758c0,8.01-6.72,14.5-15,14.5s-15-6.49-15-14.5s6.72-14.5,15-14.5c2.67,0,9.098444,1.042413,11.106467,4.91503" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="953.67" stroke-dasharray="953.67">
+              <animate attributeName="stroke-dashoffset" values="953.67;953.67;0; 0" keyTimes="0; 0.35; 0.5; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-70">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.35; 0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-70"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.35; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>  
+  <g id="cable-and-animated-unit-69">
+          <path id="cable-path-69"       
+          d="M1365,2486c-2.811685-1.57814-5.838026-8.096803-5.838026-10.866803c0-8.01,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-1.71,0-7.108428-.947791-8.99313-3.427378L1212,2658.9l-1.65,156.32-163.466,147.16c2.871644,2.316913,3.02553,7.768934,2.82898,9.002382-1.260491,7.9102-6.716,14.5-15,14.5s-15-6.49-15-14.5s6.716-14.5,15-14.5c3.064,0,10.482591,1.227759,12.340399,5.450049" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="792.16" stroke-dasharray="792.16">
+              <animate attributeName="stroke-dashoffset" values="792.16;792.16;0; 0" keyTimes="0; 0.2; 0.45; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-69">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.2; 0.45; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-69"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.2; 0.45" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-68">
+          <path id="cable-path-68"       
+          d="M1186,2390c-2.52-2.27-2.41-4.97-2.41-7.88c0-8.01,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-1.58,0-3.09-.24-10.62-3.67l-71.98,87.01-1.58,226.81-222.803,208.44c3.442341,2.934327,3.730475,8.514604,3.442341,9.754382-1.81326,7.802063-6.716,14.5-15,14.5s-15-6.49-15-14.5s6.716-14.5,15-14.5c2.773,0,7.530416-.222657,11.6441,4.86532" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="821.48" stroke-dasharray="821.48">
+              <animate attributeName="stroke-dashoffset" values="821.48;821.48;0; 0" keyTimes="0; 0.15; 0.3; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-68">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.15; 0.3; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-68"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.15; 0.3" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>  
+  <g id="cable-and-animated-unit-67">
+          <path id="cable-path-67"       
+          d="M1299,2256c-1.942017-7.161009,6.802738-14.537887,14.950116-13.499198c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.59264.174264-15.443465-9.19945-15.050518-15.478745h-188.899l-58.017,87.27-1.484,2.23h-223.297c-.786684,6.734318-7.340874,14.852035-14.754799,13.708108-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.872396-.691686,15.532819,8.568613,14.503942,15.302324" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="705.36" stroke-dasharray="705.36">
+              <animate attributeName="stroke-dashoffset" values="705.36;705.36;0; 0" keyTimes="0; 0.4; 0.6; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-67">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.4; 0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-67"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.4; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>
+  <g id="cable-and-animated-unit-66">
+          <path id="cable-path-66"       
+          d="M802,2160c-1.168682-6.421873,6.255426-14.284099,13.905469-13.652482c8.284,0,15,6.49,15,14.5s-6.716,14.5-15,14.5c-8.178007.332252-13.875236-8.844484-13.983368-15.326452h-202.495c-.03673,6.69015-6.796675,15.239824-14.66108,14.462932-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c7.579241-.556621,15.419556,7.592845,14.713897,14.539174" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="385.78" stroke-dasharray="385.78">
+              <animate attributeName="stroke-dashoffset" values="385.78;385.78;0; 0" keyTimes="0; 0.2; 0.4; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-66">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.2; 0.4; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-66"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.2; 0.4" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>
+  <g id="cable-and-animated-unit-65">
+          <path id="cable-path-65"       
+          d="M1150,2202c-.332083-6.866591,5.947081-15.664527,14.437544-14.562456c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-9.300099.60645-15.204639-8.330453-14.473461-14.477135h-179.627l-1.487-1.63L883,2106h-181.41c-.194544,6.887929-7.602908,14.820467-15.081243,13.871061-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.310993-.270388,15.291045,8.67343,15.052029,15.05203" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="676.54" stroke-dasharray="676.54">
+              <animate attributeName="stroke-dashoffset" values="676.54;676.54;0; 0" keyTimes="0; 0.65; 0.85; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-65">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.65; 0.85; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-65"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.65; 0.85" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-64">
+          <path id="cable-path-64"       
+          d="M1094,2093c1.656146-1.453125,7.534353-3.35674,9.680596-2.779278c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.284,0-13.620651-6.609658-15-14.5-.490912-2.808183,2.906466-10.604515,5.319404-11.630562
+            L993,1990.5l-270.481-1.52-57.526-59.48h-84.296c.100308,6.78161-6.103017,16.855273-14.961062,15.509749-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c7.464408-.726114,15.090358,6.51377,14.979154,13.667008" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="767.54" stroke-dasharray="767.54">
+              <animate attributeName="stroke-dashoffset" values="767.54;767.54;0; 0" keyTimes="0; 0.5; 0.75; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-64">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.5; 0.75; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-64"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.5; 0.75" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>   
+  <g id="cable-and-animated-unit-63">
+          <path id="cable-path-63"       
+          d="M1246,1980c7.03542-.093131,17.098493,6.485979,15.600706,14.862659-1.409863,7.884948-6.72,14.5-15,14.5s-13.652387-6.604176-15-14.5c-1.399643-8.200675,6.476711-15.268313,14.522608-14.727773v-57.7l.86-1.27l52.14-76.73v-84.63c-6.45606-.009696-15.011117-5.619007-14.688417-13.722508.318724-8.003657,6.72-14.5,15-14.5s15,6.490002,15,14.5c0,8.745948-9.831221,15.122835-15.391221,13.760315" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="421.48" stroke-dasharray="421.48">
+              <animate attributeName="stroke-dashoffset" values="421.48;421.48;0; 0" keyTimes="0; 0.2; 0.5; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-63">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;  0.2; 0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-63"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0;  0.2; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-62">
+          <path id="cable-path-62"       
+          d="M852,1928c-.19524,7.714852-6.340459,16.204672-13.958765,14.943204-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c7.778805-.244146,14.629777,7.901692,13.932494,13.915742l304.217-5.87l49.22-74.75c-2.873285-1.30675-7.760865-7.811128-7.311449-12.137606.827592-7.967133,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-1.080734.603666-6.717466-1.351299-7.463271-2.332272" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="576.92" stroke-dasharray="576.92">
+              <animate attributeName="stroke-dashoffset" values="576.92;576.92;0; 0" keyTimes="0; 0.3; 0.45; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-62">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.3; 0.45; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-62"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.3; 0.45" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-61">
+          <path id="cable-path-61"       
+          d="M1185,1719c-.817359-6.957234,5.694056-14.922585,14.016537-14.229884c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.399134.774229-13.761623-8.829325-14.089584-14.804611h-63.88l-60.496,68h-218.271l-1.268-.85-89.233-60.15h-156.089c-.371903,7.772128-7.406607,14.627492-14.844858,13.069824-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.972825-1.096022,17.023604,8.173989,14.864687,15.924581" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="961.93" stroke-dasharray="961.93">
+              <animate attributeName="stroke-dashoffset" values="961.93;961.93;0; 0" keyTimes="0; 0.47; 0.6; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-61">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.47; 0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-61"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.47; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-60">
+          <path id="cable-path-60"       
+          d="M1250,1620c-.892265-6.03703,6.226528-14.410289,14.041046-13.859389c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.296368.413248-14.664166-8.481613-14.249378-15.174409h-174.549l-55.044,53.58-1.455,1.42-157.479-.96-55.5-40.5-2.053-1.5v-74.42l-181.777-125.58c-2.619,2.16-6.03656,4.198623-9.74656,4.198623-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5s15.948386,5.517626,15,13.471283c-.086294.723706-.056269,8.084644-5.078201,11.396982" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="961.93" stroke-dasharray="961.93">
+              <animate attributeName="stroke-dashoffset" values="961.93;961.93;0; 0" keyTimes="0; 0.34; 0.47; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-60">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.34; 0.47; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-60"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.34; 0.47" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g> 
+  <g id="cable-and-animated-unit-59">
+          <path id="cable-path-59"       
+          d="M1095,1534c1.798613-2.425543,7.725335-6.155226,10.534769-5.265495c8.284,0,15,6.49,15,14.5s-6.716,14.5-15,14.5-15-6.49-15-14.5c0-1.91,1.325239-8.038317,4.483073-9.237737l-75.444-65.6h-136.545c.469391,9.927834-8.154201,15.08628-14.620201,15.08628-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c6.466,0,15.089592,7.846587,14.636904,13.882424" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="420.7" stroke-dasharray="420.7">
+              <animate attributeName="stroke-dashoffset" values="420.7;420.7;0; 0" keyTimes="0; 0.16; 0.25; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-59">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.16; 0.25; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-59"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.16; 0.25" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>  
+  <g id="cable-and-animated-unit-58">
+          <path id="cable-path-58"       
+          d="M878,1200c-3.278566-1.420347-7.025345-7.841701-6.341492-11.748783c1.380989-7.890055,6.716-14.5,15-14.5s15,6.49,15,14.5-6.716,14.5-15,14.5c-1.123.942192-7.702263-1.704203-8.755263-2.567754l-61.263,79.89-1.501,1.96h-258.828c-.430881,5.364912-7.174969,15.340697-15.503736,13.21337-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.365126-.572563,16.498318,7.839445,15.53957,15.603819" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="548.2" stroke-dasharray="548.2">
+              <animate attributeName="stroke-dashoffset" values="548.2;548.2;0; 0" keyTimes="0; 0.16; 0.3; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-58">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.16; 0.3; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-58"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.16; 0.3" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>
+  <g id="cable-and-animated-unit-57">
+          <path id="cable-path-57"       
+          d="M810,840c1.197995-1.274005,7.026322-3.588631,9.414908-3.229045c8.284,0,15,6.492,15,14.5s-6.716,14.5-15,14.5-13.872255-7.764973-15.091267-15.679649c-.54711-3.552219,3.898074-9.220513,5.705073-9.866516
+            L577,549q-350.888747,5.193719-351.318747,5.073719c-2.053,5.642-7.613,9.686-14.151,9.686-8.2843,0-15-6.492-15-14.5s6.7157-14.5,15-14.5c8.034499,0,16.267061,8.252029,16.102549,13.893029" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="904.38" stroke-dasharray="904.38">
+              <animate attributeName="stroke-dashoffset" values="904.38;904.38;0; 0" keyTimes="0; 0.7; 0.82; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-57">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.7; 0.82; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-57"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.7; 0.82" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>
+  <g id="cable-and-animated-unit-56">
+          <path id="cable-path-56"       
+          d="M860,430c-1.256985-.730126-5.258795-7.188263-5.152169-10.6019.25001-8.004097,6.716-14.5,15-14.5s15,6.492,15,14.5-6.716,14.5-15,14.5c-2.372439.848027-8.69138-2.421855-10.05584-4.015785
+            L780,510h-368.651c.829817,8.28395-5.905946,16.321468-14.460892,14.636181-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5c8.737877-.61697,16.007879,8.237398,14.464494,14.464495" 
+              fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="676.13" stroke-dasharray="676.13">
+              <animate attributeName="stroke-dashoffset" values="676.13;676.13;0; 0" keyTimes="0; 0.6; 0.9; 1" dur="10s" repeatCount="indefinite"
+              />
+          </path>
+          <g id="animated-component-on-path-56">
+              <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.6; 0.9; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                  <mpath xlink:href="#cable-path-56"/> </animateMotion>
+              <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                  <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                  <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.6; 0.9" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+              </g>
+          </g>
+  
+  </g>
+</g>
+<g id="cable-and-animated-loos-middle_under">  
+  <g id="cable-and-animated-unit-55">
+        <path id="cable-path-55"       
+        d="M3700,2423c-1.505792-8.60454,6.732346-16.968204,14.921746-16.153712c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-7.2464.63456-14.444774-7.616363-15.081102-12.855831l-267.65-.85-99.74-67.15h-296.95l-1.44-1.35-293.06-274.65h-39.12l-39.9,35.42v118.29c4.267456-.130102,13.772715,4.736657,15.462793,14.549694c1.359529,7.893782-6.72,14.5-15,14.5s-14.377733-6.514207-15-14.5c-.615689-7.901379,6.983101-15.176865,14.464236-14.584595" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1484.44" stroke-dasharray="1484.44">
+            <animate attributeName="stroke-dashoffset" values="1484.44;1484.44;0; 0" keyTimes="0; 0.6; 0.9; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-55">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.6; 0.9; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-55"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.6; 0.9" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-54">
+        <path id="cable-path-54"       
+        d="M2730,2154c-6.366854.42584-14.907993-6.126532-14.594391-13.847739.325064-8.003402,6.72-14.5,15-14.5s15.178504,6.49199,15,14.5c-.234907,10.538322-9.827325,15.112353-15.469821,13.727289v200.86l140.5,151v288.98c5.56.037476,15.167443,5.710304,15.167443,14.499156c0,8.010001-6.72,14.5-15,14.5s-14.368538-6.514929-15-14.5c-.639701-8.089252,7.785375-15.380749,14.917489-14.625465" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="880.65" stroke-dasharray="880.65">
+            <animate attributeName="stroke-dashoffset" values="880.65;880.65;0; 0" keyTimes="0; 0.1; 0.33; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-54">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.1; 0.33; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-54"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.1; 0.33" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-53">
+        <path id="cable-path-53"       
+        d="M2710,2740c.966638,2.73655,4.759483,5.751042,4.252988,11.557666-.696046,7.9797-6.72,14.5-15,14.5s-15-6.49-15-14.5s6.72-14.5,15-14.5c2.992187-.618279,9.13138,1.224376,10.694588,3.159562l41.88-43.74v-170.44l-115.52-116.48c-1.464198,2.149753-8.137851,6.165835-11.667254,5.166581-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5s13.834813,6.575201,15,14.5c.279307,1.899653-2.104254,7.980969-3.189464,9.303364" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="580.78" stroke-dasharray="580.78">
+            <animate attributeName="stroke-dashoffset" values="580.78;580.78;0; 0" keyTimes="0; 0.35; 0.55; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-53">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.35; 0.55; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-53"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.35; 0.55" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-52">
+        <path id="cable-path-52"       
+        d="M2570,2670c6.749024.336464,14.923008,7.202791,14.340162,14.207061-.66424,7.982412-6.72,14.5-15,14.5s-13.971933-6.556249-15-14.5c-1.044237-8.068695,7.902173-14.825383,15.582057-14.304252v-116.57l-54.57-53.59c-.749708,1.320585-6.619203,2.76066-8.243971,2.231124-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5s13.360488,6.659585,15,14.5c.698285,3.339314-3.651713,10.574828-6.540753,12.431213" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="377.16" stroke-dasharray="377.16">
+            <animate attributeName="stroke-dashoffset" values="377.16;377.16;0; 0" keyTimes="0; 0.26; 0.35; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-52">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.26; 0.35; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-52"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.26; 0.35" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-51">
+        <path id="cable-path-51"       
+        d="M2486,2165c-7.509554.638662-16.184949-6.184595-15.698888-14.652779.459006-7.996837,6.72-14.5,15-14.5s14.87315,6.491003,15,14.5c.1354,8.548796-14.329869,14.664924-14.329869,14.724924q-.84,147.78-.91,147.87c-.16.24-.36.47-.57.68l-184.52,182.53v94.41l35.19,36.59c.350969-1.748952,7.381356-5.825255,11.764439-4.97953c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5-15-6.49-15-14.5c0-2.04,2.417502-7.725868,3.207502-9.485868" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="738.19" stroke-dasharray="738.19">
+            <animate attributeName="stroke-dashoffset" values="738.19;738.19;0; 0" keyTimes="0; 0.04; 0.25; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-51">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.04; 0.25; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-51"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.04; 0.25" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-50">
+        <path id="cable-path-50"       
+        d="M1835,3400c6.665194-.423757,16.097945,5.659177,15.760275,14.524031-.304887,8.004195-6.72,14.5-15,14.5s-13.902404-6.565558-15-14.5c-.974645-7.045638,6.807341-14.548108,14.158022-14.515006v-432.21c0-2.06,1.24-3.83,3.02-4.59l53.98-53.98v-82.75c-.84-1.74-.63-3.88.71-5.44l62.88-73.2c.45-2.3,2.48-4.04,4.91-4.04q59.95-.02,59.96-.03L2187,2576v-321.43c0-.33-5.780398-.82198-5.720398-1.13198-5.61-2.1-9.59-7.36-9.59-13.53c0-8.01,6.72-14.5,15-14.5s15,6.489998,15,14.5c0,8.034593-8.381854,15.761389-14.481854,14.740096" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1508.59" stroke-dasharray="1508.59">
+            <animate attributeName="stroke-dashoffset" values="1508.59;1508.59;0; 0" keyTimes="0; 0.53; 0.96; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-50">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.53; 0.96; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-50"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.53; 0.96" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id = "cable-and-animated-group-loos-left">
+  <g id="cable-and-animated-unit-49">
+        <path id="cable-path-49"       
+        d="M2150,2100c-5.681813.316243-14.573883-5.937016-14.454413-14.456406.112316-8.009215,6.72-14.5,15-14.5s14.890798,6.490744,15,14.5c.14313,10.497672-9.370624,15.186075-15.559703,14.251858v420.67c0,2.37-1.65,4.35-3.87,4.87l-66.43,84.34q-.37,1.01-2.27,2.88c-1.71,2.17-7.35.56-7.5.41h-169.93c-2.06,0-3.83-1.25-4.59-3.02q-64.57-64.58-64.64-64.65c-.556689.476623-8.114076,2.453326-9.148421,1.924635-8.28,0-14.908494-6.856021-14.908494-14.866021s6.72-14.5,15-14.5s14.248346,6.525345,15,14.5c.356662,3.783998-2.944223,10.89046-5.940974,12.944409" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="999.77" stroke-dasharray="999.77">
+            <animate attributeName="stroke-dashoffset" values="999.77;999.77;0; 0" keyTimes="0; 0.04; 0.31; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-49">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.04; 0.31; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-49"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.04; 0.31" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g> 
+  <g id="cable-and-animated-unit-48">
+        <path id="cable-path-48"       
+        d="M2061,2470c6.88245-.851614,15.918524,5.614944,15.167968,13.951445-.718255,7.977731-6.72,14.5-15,14.5s-13.735545-6.590433-15-14.5c-1.335194-8.352061,7.308987-14.679,14.864695-14.029681v-350.66c-5.177208.621171-15.3783-4.417363-16.164649-13.872761-.663852-7.982442,6.72-14.5,15-14.5s14.547479,6.502793,15,14.5c.440052,7.77684-7.174122,14.002583-13.64676,13.850456" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="534.34" stroke-dasharray="534.34">
+            <animate attributeName="stroke-dashoffset" values="534.34;534.34;0; 0" keyTimes="0; 0.17; 0.27; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-48">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.17; 0.27; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-48"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.17; 0.27" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>  
+  <g id="cable-and-animated-unit-47">
+        <path id="cable-path-47"       
+        d="M2050,2045c-1.426682-.765921-3.711821-6.191339-3.277429-7.734402c2.17055-7.710306,6.72-14.5,15-14.5s15,6.49,15,14.5-6.586028,15.03589-14.866028,15.03589c-3.682801.884401-10.093539-4.804032-11.913708-7.295194l-110.08,110.57q-.02,122.38-.03,122.42c-.01.13-.71,2.13-.73,2.15-.11.19-.67.86-.7.89l-163.5,164c-1.95,1.96-7.1-.02-7.11-.03q-278.17.3-278.34.43c-2.18,1.71-5.32,1.33-7.02-.84l-114.22-145.59h-210.07l-73.28,132.29q-.055,254.06-.158,254.46c.453,1.77-.079,3.72-1.544,5.01l-104.131684,91.09453c1.418559,2.18904,4.926589,8.367195,4.524204,10.208938-1.709699,7.825408-6.716,14.5-15,14.5s-15-6.49-15-14.5s6.716-14.5,15-14.5c2.673989-.737474,8.974487,2.698578,10.613004,4.549788" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1936.2" stroke-dasharray="1936.2">
+            <animate attributeName="stroke-dashoffset" values="1936.2;1936.2;0; 0" keyTimes="0; 0.16; 0.92; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-47">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.16; 0.92; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-47"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 00.16; 0.92" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-46">
+        <path id="cable-path-46"       
+        d="M1861,2292c-1.751622-1.580732-6.019989-7.329176-5.437216-9.848937c1.804917-7.803998,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-2.599172.94793-8.23871-2.848923-9.724523-4.689392L1743,2408h-220.36l-1.5-1.78-96.44-114.56c-.733594.986016-6.543418,3.086465-7.883422,2.511454-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5s14.22109,6.527961,15,14.5c.344124,3.522063-4.336565,9.781046-7.050193,11.85923" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1059.76" stroke-dasharray="1059.76">
+            <animate attributeName="stroke-dashoffset" values="1059.76;1059.76;0; 0" keyTimes="0; 0.35; 0.64; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-46">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.35; 0.55; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-46"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.35; 0.55" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-45">
+        <path id="cable-path-45"       
+        d="M1750,1970c-1.077959-1.058166-4.858744-7.503918-4.713448-10.255102.422437-7.998854,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-2.541758,1.552304-8.814048-2.540789-10.650228-4.31753l-68.95,70.91-1.47,1.51h-352.23c.419027,7.697298-7.087525,16.062788-14.664672,14.874472-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c8.405332-.436333,15.318055,7.866561,14.739096,14.301301" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="638.76" stroke-dasharray="638.76">
+            <animate attributeName="stroke-dashoffset" values="638.76;638.76;0; 0" keyTimes="0; 0.64; 0.84; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-45">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.64; 0.84; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-45"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.64; 0.84" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-44">
+        <path id="cable-path-44"       
+        d="M1750,1790c-1.03397-6.208675,6.37906-15.118712,14.584033-14.709114c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.218776.794898-14.700544-7.692953-14.614913-14.226422q-136.63-.3-136.67-.31c-.03-.02-1.7-1.07-1.71-1.08l-118.05-113.11h-77.23c.599625,7.719718-6.437298,17.416793-14.606383,16.28498-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c7.931853-.33237,14.72917,6.99844,14.578858,12.756501" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="563.8" stroke-dasharray="563.8">
+            <animate attributeName="stroke-dashoffset" values="563.8;563.8;0; 0" keyTimes="0; 0.22; 0.48; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-44">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.22; 0.48; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-44"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.22; 0.48" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-43">
+        <path id="cable-path-43"       
+        d="M1490,1560c.824999,8.194999-6.888831,16.585559-14.295602,15.248788-8.28,0-15.334979-6.49-15.334979-14.5s6.72-14.5,15-14.5c8.321088-.294218,15.296063,7.364372,14.627723,13.91804q141.36.33,141.39.34c.12.05,1.78,1.18,1.79,1.19l109.32,113.28c.535773-.881342,7.220675-3.55636,8.894825-2.635133c8.28,0,14.890674,7.03663,14.890674,15.04663s-6.868061,14.648062-15.148061,14.648062-13.867945-6.570402-15-14.5c-.542838-3.802366,3.454969-11.117154,6.511316-12.680197" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="487.82" stroke-dasharray="487.82">
+            <animate attributeName="stroke-dashoffset" values="487.82;487.82;0; 0" keyTimes="0; 0.22; 0.4; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-43">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.22; 0.4; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-43"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.22; 0.4" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-42">
+        <path id="cable-path-42"       
+        d="M1680,1398c-.895768-7.407883,6.373091-15.732108,14.805703-14.940803c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.470195,1.371541-14.337708-7.719482-14.845275-13.788016h-163.84c-2.38,0-4.36-1.66-4.87-3.88
+          L1412,1290h-241.49c-.887706,7.098441-8.186353,15.09428-14.928367,13.78626-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c8.272409-.462153,15.29876,8.321549,14.901362,15.398073" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="740.98" stroke-dasharray="740.98">
+            <animate attributeName="stroke-dashoffset" values="740.98;740.98;0; 0" keyTimes="0; 0.25; 0.5; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-42">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.25; 0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-42"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.25; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>  
+  <g id="cable-and-animated-unit-41">
+        <path id="cable-path-41"       
+        d="M1610,1160c-.548379-1.055092-2.735756-6.758813-2.793442-8.755737-.231292-8.006662,6.72-14.5,15-14.5s15,6.49,15,14.5-6.72,14.5-15,14.5c-3.89833,1.670993-10.938256-3.035289-12.446169-5.955045l-71.17,61.07c-1.82,1.56-4.43,1.59-6.26.21q-57.72-.01-57.78-.01c-.04,0-2.14-.62-2.17-.63-.28-.16-1.12-.86-1.12-.86q-75.03-76.53-75.05-76.55c-.03-.04-1.28-2.46-1.29-2.5-.01-.03-.09-.82-.09-.95v-110.607l-66.64-75.393h-130.36c-2.36,0-4.34-1.639-4.86-3.842l-91.36-94.775c-1.282772,2.455794-6.78497,4.31192-9.113352,3.334084-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5s13.333938,6.667229,15,14.5c.594436,2.794662-3.568697,9.9965-6.031541,11.195793" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="938.81" stroke-dasharray="938.81">
+            <animate attributeName="stroke-dashoffset" values="938.81;938.81;0; 0" keyTimes="0; 0.57; 0.9; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-41">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0; 0.57; 0.9; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-41"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0; 0.57; 0.9" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-40">
+        <path id="cable-path-40"       
+        d="M1666,1083c-.629607-6.705223,5.708919-15.805278,14.214207-14.925148c8.28,0,15,6.492,15,14.5s-6.72,14.5-15,14.5c-8.225473.501564-15.083482-7.679849-14.144645-14.092089h-157.92l-1.5-2.002-139-185.498-138.05-1.477-287.654-289.646c-1.219141,1.568789-6.409632,4.18083-8.867908,3.575917-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5s13.637475,6.608765,15,14.5c.506926,2.935926-3.917622,9.728481-5.964957,10.784146" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1122.15" stroke-dasharray="1122.15">
+            <animate attributeName="stroke-dashoffset" values="1122.15;1122.15;0; 0" keyTimes="0; 0.43; 0.8; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-40">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.43;0.8; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-40"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.43; 0.8" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-39">
+        <path id="cable-path-39"       
+        d="M1650,820c-.967617-7.365952,6.921925-15.890323,14.711525-14.902583c8.28,0,15,6.492,15,14.5s-6.72,14.5-15,14.5c-7.688281.870084-14.863382-6.473894-14.786247-14.002623l-184.67-1.363-96.06-90.637h-194.75c-.500741,7.66224-7.099763,16.314672-14.592314,15.255061-8.28,0-15-6.492-15-14.5s6.72-14.5,15-14.5c7.991583-.983761,15.05974,7.026205,14.661999,13.814485" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="696.53" stroke-dasharray="696.53">
+            <animate attributeName="stroke-dashoffset" values="696.53;696.53;0; 0" keyTimes="0; 0.28; 0.45; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-39">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.28;0.45; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-39"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.28; 0.45" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-38">
+        <path id="cable-path-38"       
+        d="M1800,900c-6.194804,1.292238-15.329593-5.594832-15.079159-14.161738.233996-8.004582,6.72-14.5,15-14.5s14.670766,6.49877,15,14.5c.327055,7.948276-8.741473,13.554573-14.854685,14.129511v423.347c6.467224-.472804,17.056831,4.208114,16.86959,14.061203-.152189,8.008554-6.72,14.5-15,14.5s-14.183207-6.531754-15-14.5c-.739935-7.21846,6.384769-14.316194,13.166029-14.006892" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="607.12" stroke-dasharray="607.12">
+            <animate attributeName="stroke-dashoffset" values="607.12;607.12;0; 0" keyTimes="0; 0.28; 0.45; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-38">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.28;0.45; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-38"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.28; 0.45" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-37">
+        <path id="cable-path-37"       
+        d="M1940,1360c7.006647-1.062714,17.153408,5.543735,16.276224,14.821485-.75396,7.974438-6.72,14.5-15,14.5s-13.924966-6.562469-15-14.5c-1.112822-8.216542,6.889392-15.029885,13.729562-14.749567l-.49-499.819-88.86-107.691h-341.68l-1.46-1.426-91.54-89.574-213.62-1.594-107-115-1.34-1.439v-90.908l-95.113-68.559h-144.943l-77.5,71h-378.682c.276421,6.922711-5.763882,16.22398-14.363719,15.253561-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5c8.197358-.899434,14.686203,7.175984,14.372393,13.649229" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="2506.25" stroke-dasharray="2506.25">
+            <animate attributeName="stroke-dashoffset" values="2506.25;2506.25;0; 0" keyTimes="0; 0.2; 0.5; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-37">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.2;0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-37"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.2; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-36">
+        <path id="cable-path-36"       
+        d="M1121,238c-2.301696,3.144371-9.57476,6.16768-13.224049,5.635379-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5s14.446156,7.859127,15,14.5c.093652,1.122939.040965,7.749393-1.623188,8.864621L1490,600l201.55,1.521l61.03,62.979l96.97,1.522l198.91,205.455-1.05,81.09-38.95,50.147-1.81,367.716-74.37,61.57h-71.56c-.54135,7.21865-7.482289,15.357878-15.265446,14.234721-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c8.376959-.79011,16.389433,8.111868,15.26311,14.65424" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="2055.39" stroke-dasharray="2055.39">
+            <animate attributeName="stroke-dashoffset" values="2055.39;2055.39;0; 0" keyTimes="0; 0.2; 0.5; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-36">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.2;0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-36"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.2; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id= "cable-and-animated-loos-middle-top">
+  <g id="cable-and-animated-unit-35">
+        <path id="cable-path-35"       
+        d="M1950,1480c.977452,8.691586-5.636917,16.710182-13.944252,15.553051-8.28,0-15-6.49-15-14.5s6.571509-14.648491,14.851509-14.648491c7.128285-.857921,14.004284,7.217429,14.03374,13.614618h79.58l39.01-31.87v-437.63c0-2.299,1.55-4.235,3.67-4.819l33.33-41.444v-85.225l-215.77-224.598c-.862647,1.016471-6.284053,3.795557-8.235981,3.152986-8.28,0-15-6.492-15-14.5s6.72-14.5,15-14.5s14.005259,6.554023,15,14.5c.442714,3.536393-4.372062,10.175903-6.823625,11.416449" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1207.96" stroke-dasharray="1207.96">
+            <animate attributeName="stroke-dashoffset" values="1207.96;1207.96;0; 0" keyTimes="0; 0.12; 0.5; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-35">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.12;0.5; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-35"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.12; 0.5" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-34">
+        <path id="cable-path-34"       
+        d="M1755,1070c-7.158262.987032-16.084636-5.250326-15.190664-14.142249.801066-7.967831,6.72-14.5,15-14.5s15,6.492,15,14.5C1770,1075,1755,1070,1755,1070v321.43l165.57,166.07h122.05l79.38-69.27q1.21-104.5,2.94-105.29l57.06-59.45v-49.47l-46.78-47.69c-2.16-.57-3.72-5.95-3.71-6.12l2.97-410.042c-7.191388.998007-16.63934-5.373372-15.595073-13.942951.968669-7.949199,6.72-14.5,15-14.5s14.390074,6.515261,15,14.5c.582862,7.63044-7.349998,14.271741-14.236095,13.905023" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1688.62" stroke-dasharray="1688.62">
+            <animate attributeName="stroke-dashoffset" values="1688.62;1688.62;0; 0" keyTimes="0; 0.36; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-34">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.36;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-34"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.36; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-33">
+        <path id="cable-path-33"       
+        d="M2460,985c-.726355-1.517-3.836397-4.400492-3.478503-8.7534.656199-7.981067,6.72-14.5,15-14.5s15,6.492,15,14.5-6.72,14.5-15,14.5c-3.573599,1.392477-10.036197-3.10105-11.457866-5.865046l-70.84,61.805v105.618l148.28,144.91c1.352941-1.635587,7.330796-4.742856,10.223904-3.733195c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5-13.288678-6.674946-15-14.5c-.588352-2.690251,3.047892-9.543434,4.833977-10.863374" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="592.03" stroke-dasharray="592.03">
+            <animate attributeName="stroke-dashoffset" values="592.03;592.03;0; 0" keyTimes="0; 0.13; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-33">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.13;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-33"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.13; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+  <g id="cable-and-animated-unit-32">
+        <path id="cable-path-32"       
+        d="M2930,893c-7.260553.011773-15.124642-6.377463-14.284583-13.866545.892668-7.958091,6.72-14.5,15-14.5s15,6.492002,15,14.5c0,9.604935-10.012414,14.886335-15.842414,13.860529q-.09,200.753-.09,200.784c-.04.217-.72,1.767-.73,1.781-.03.053-.61.765-.62.777
+          L2801,1225v223.28c6.732657.41035,15.422897,6.963872,14.612005,14.692933-.83578,7.966278-6.72,14.5-15,14.5s-14.225164-6.527563-15-14.5c-.743298-7.647936,8.335909-15.158307,15.588999-14.586746" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="792.73" stroke-dasharray="792.73">
+            <animate attributeName="stroke-dashoffset" values="792.73;792.73;0; 0" keyTimes="0; 0.12; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-32">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.12;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-32"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.12; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id= "cable-and-animated-loos-right">
+      <g id="cable-and-animated-unit-31">
+        <path id="cable-path-31"       
+        d="M3050,1451C3038,1444,3056,1434,3065,1436c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-7.861017.59615-14.364626-6.513517-14.502831-12.894287h-151.5c.576878,7.248438-5.680005,14.627869-13.997169,13.894287-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c9.043223-.874478,16.724182,8.366324,13.870322,14.909813" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="336.55" stroke-dasharray="336.55">
+            <animate attributeName="stroke-dashoffset" values="336.55;336.55;0;0" keyTimes="0; 0.14; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-31">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.14;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-31"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.14; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>      
+  <g id="cable-and-animated-unit-30">
+        <path id="cable-path-30"       
+        d="M3416,1649c-1.056845-7.005679,5.902718-15.057815,14.173146-14.221902c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-8.537401.73522-14.489112-8.13848-14.231905-14.533555h-49.42c-2.04,0-3.8-1.22-4.57-2.97l-39.49-38.53h-287.87l-115.24,115.24c2.137522.967434,8.279346,7.651162,7.689801,12.489798-.968783,7.951198-6.72,14.5-15,14.5s-15-6.49-15-14.5s6.72-14.5,15-14.5c1.809894-.449894,6.407857,1.098467,7.098331,1.977993" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="745.12" stroke-dasharray="745.12">
+            <animate attributeName="stroke-dashoffset" values="745.12;745.12;0;0" keyTimes="0; 0.15; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-30">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.15;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-30"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.15; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+        <g id="cable-and-animated-unit-29">
+        <path id="cable-path-29"       
+        d="M3126,2000c3.727959,2.411232,9.265354,9.487254,7.624107,14.908221-2.164819,7.150302-6.179011,13.64441-16.270978,13.256131s-15-6.49-15-14.5s6.205465-15.418221,14.485465-15.418221c1.5-.937324,7.791406,1.145926,9.161406,2.122408l89.331769-89.937614c.17-.16,1.7-1.11,1.73-1.12.04-.02,1.41-.33,1.56-.33.08-.01.17-.01.25-.01l171.739064-.737077c1.009253-5.280498,8.216613-10.793285,14.742296-10.069496c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-9.393115,1.138922-17.544985-9.964056-14.373757-19.299043" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="493.41" stroke-dasharray="493.41">
+            <animate attributeName="stroke-dashoffset" values="493.41;493.41;0;0" keyTimes="0; 0.35; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-29">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.35;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-29"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.35; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+        <g id="cable-and-animated-unit-28">
+        <path id="cable-path-28"       
+        d="M3403,2173c-1.509606-8.039803,2.08104-18.209101,14.927356-19.782565c8.28,0,15,6.49,15,14.5s-6.72,14.5-15,14.5c-5.66,0-12.367356-4.227175-14.927356-8.697175l-163.709128-.591425c-2.06,0-3.83-1.25-4.59-3.02q-64.57-64.58-64.64-64.65c-.74.11-6.363516,1.9586-7.133516,1.9586-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5s13.899672,6.565936,15,14.5c.540039,3.894023-4.511419,10.719689-7.705631,12.655162" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="445.35" stroke-dasharray="445.35">
+            <animate attributeName="stroke-dashoffset" values="445.35;445.35;0;0" keyTimes="0; 0.35; 0.6; 1" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-28">
+            <animateMotion keyPoints="0; 0; 1; 1" keyTimes="0;0.35;0.6; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-28"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="0;1; 0" keyTimes="0;0.35; 0.6" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id = "cable-and-animated-group-middle_under">
+    <g id="cable-and-animated-unit-27">
+        <path id="cable-path-27"       
+        d="M2620,2075L2620,2353c.2.16.4.33.59.52l151.46,155.83c.65.67,1.08,1.48,1.28,2.34.7.84,1.12,1.92,1.13,3.11l5.01,409.26L2917,3054h128.92l1.42,1.26l164.5,146l1.68,1.49v242.77c7.322343-1.011443,17.26886,5.55929,16.627029,13.994325-.607733,7.986912-6.72,14.5-15,14.5s-14.069114-6.544276-15-14.5c-.881952-7.537512,6.980319-13.916372,13.422052-14.091255" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1787.73" stroke-dasharray="1787.73">
+            <animate attributeName="stroke-dashoffset" values="1787.73;0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-27">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-27"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-26">
+        <path id="cable-path-26"       
+        d="M2520,2075Q2520,2310,2520,2310c-.02.05-.64,1.52-.66,1.54-.03.05-.42.57-.42.58l-41,47.5c-.1.1-.19.2-.29.3v140.33l40.51,40.04c.55.54.94,1.17,1.18,1.84.51.78.81,1.72.81,2.72v326.92l162.02,160.53l1.48,1.47v87.29l106.26,91.5l1.74,1.5v213.95c6.620173-.800866,16.593056,5.733437,16.192949,14.223974-.377044,8.001123-6.72,14.5-15,14.5s-14.725314-6.494709-15-14.5c-.26487-7.719218,7.705633-14.233133,13.621079-14.220458" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1595.25" stroke-dasharray="1595.25">
+            <animate attributeName="stroke-dashoffset" values="1595.2; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-26">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-26"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-25">
+        <path id="cable-path-25"       
+        d="M2451,2075Q2451,2310,2451,2310c-.03.4-.82,2.35-.89,2.44-.16.24-.36.47-.57.68L2277,2485v220.85q138.95,100.27,138.96,100.3c.02.04.47,1.4.49,1.54c0,.03.05.7.05.72v52.96l77.61,80.51c1.19.55,2.13,1.57,2.59,2.81.96,1.48,1.05,3.35.3,4.9v103.53q128.55,110.77,128.57,110.8c.03.03.86,1.17.92,1.3.02.04.47,1.59.48,1.61c0,.05.03.56.03.58v225.83c6.694612-1.122601,15.334147,6.235239,14.801137,14.464073-.51775,7.993251-6.72,14.5-15,14.5s-14.03524-6.548315-15-14.5c-.922226-7.601116,7.347207-15.134723,15.07161-14.47256" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1660.11" stroke-dasharray="1660.11">
+            <animate attributeName="stroke-dashoffset" values="1660.11; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-25">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-25"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-24">
+        <path id="cable-path-24"       
+        d="M2415,2075Q2415,2294,2415,2294c0,.04,0,.08-.01.12-.03.43-.12.86-.26,1.26-.03.06-.1.26-.12.29-.08.19-.17.38-.28.56-.06.1-.12.2-.18.3-.08.11-.34.44-.36.46-.04.04-.29.31-.3.32l-116,112.5c-.25.24-.51.45-.79.63c2.422164,1.89479,5.988564,9.317123,5.820136,11.947123-.547071,8.542502-6.94,15.5-15.5,15.5s-15.5-6.94-15.5-15.5s6.94-15.5,15.5-15.5c2.724956-.837391,8.171828,2.04248,9.836714,3.890264" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="482.82" stroke-dasharray="482.82">
+            <animate attributeName="stroke-dashoffset" values="482.82; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-24">
+            <animateMotion  keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-24"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-23">
+        <path id="cable-path-23"       
+        d="M2345,2075q.269548,89.562802.259548,89.652802c.07,1.35-.41,2.72-1.43,3.76l-85.06,86.03v619.09l302.77,261.07l1.73,1.5v141.95l-1.57,1.48-69.93,66.02v103.5c7.407856-1.115174,17.32152,5.775729,16.326471,14.504589-.907227,7.958459-6.72,14.5-15,14.5s-14.282876-6.522166-15-14.5c-.743052-8.266275,7.465949-14.767436,13.82156-14.600055" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1672.72" stroke-dasharray="1672.72">
+            <animate attributeName="stroke-dashoffset" values="1672.72;0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-23">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-23"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-22">
+        <path id="cable-path-22"       
+        d="M2310,2075L2310,2142c0,1.51-1.89,3.96-1.98,4.05L2239,2217.58v392.92c0,2.08-1.28,3.87-3.09,4.62L2183,2666.14v207.36c0,.52-.08,1.03-.23,1.5.54,1.72.13,3.67-1.23,5.04l-71.95,71.94c-.76,1.77-2.53,3.02-4.59,3.02h-93.96L1958,3006.61v171.47l41.83,49.7l1.17,1.4v66.65c7.182243-.173589,15.678044,6.650008,14.731391,14.474654-.962063,7.952015-6.72,14.5-15,14.5s-14.662854-6.497099-15-14.5c-.35575-8.444497,8.75171-15.694703,15.147796-14.288196" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1532.37" stroke-dasharray="1532.37">
+            <animate attributeName="stroke-dashoffset" values="1532.37; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-22">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-22"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id = "cable-and-animated-group-left">
+    <g id="cable-and-animated-unit-21">
+        <path id="cable-path-21"       d="M2245,1980h-168.93l-162.55,161.05c-1.17,1.16-4.77,1.45-5.02,1.45h-435.39q-63.61,68.96-63.61,69c0,2.76-2.24,5-5,5h-128c-2,1.5-4.84,1.31-6.61-.54L1203.87,2147q-103.191-.07-103.214-.07c-.511-.09-1.574-.55-1.639-.59-.178-.1-1.088-.84-1.096-.85L1000.868,2046h-228.957c.130498,6.572116-7.764751,14.643192-14.780746,13.832137-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.036354-.470755,15.812433,7.493625,14.653252,15.121476" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1737.55" stroke-dasharray="1737.55">
+            <animate attributeName="stroke-dashoffset" values="1737.55;0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-21">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-21"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-20">
+        <path id="cable-path-20"       
+        d="M2245,1945h-400.94l-136.54,135.55c-1.04,1.03-3.94,1.45-4.02,1.45h-424q-2.17,1.63-7-1c-.7-.52-1.25-1.22-1.6-2.03l-54.31-69.17c-2.08-.61-3.59-2.53-3.59-4.8v-86.5c0-2.39,1.68-4.39,3.92-4.88l52.58-78.64q.01-77.79.02-77.94l-54.82-64.04h-108.034l-51.019,54.42c-1.762,1.88-4.634,2.09-6.647.58h-177.991l-1.247-.82-68.253-44.68h-79.556l-1.276-.87-92.506-63.3c-1.179342,3.20239-8.332038,5.999848-12.023047,5.447837-8.284,0-15-6.49-15-14.5s5.305033-14.334004,15-14.5s15.876354,6.831082,15,14.5c-.16307,1.427019-2.064385,7.858094-2.915201,9.048094" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="2214.13" stroke-dasharray="2214.13">
+            <animate attributeName="stroke-dashoffset" values="2214.13;0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-20">
+            <animateMotion  keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-20"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-19">
+        <path id="cable-path-19"       
+        d="M2245,1910.5h-632.73l-43,49.29c-.01.01-.35.36-.39.39-.02.02-.63.49-.66.51-.17.12-.73.4-.76.41-.04.02-.65.23-.86.28-.02,0-.87.11-.91.11q-.05.01-96.19.01c-.47,0-.92-.07-1.35-.19c1.238298,8.938298-6.631839,17.525287-14.708758,15.988368-8.28,0-15-6.49-15-14.5s6.72-14.5,15-14.5c7.883458-.223909,14.617019,7.157464,14.835338,13.102744" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="892.79" stroke-dasharray="892.79">
+            <animate attributeName="stroke-dashoffset" values="892.79; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-19">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-19"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+
+    <g id="cable-and-animated-unit-18">
+        <path id="cable-path-18"       
+        d="M2245,1873.5h-652c-1.95,1.47-4.73,1.32-6.51-.44L1465.95,1753.5q-118.62,0-118.71-.01c-.48-.02-2.57-.86-2.59-.88-.18-.12-1.12-1.08-1.17-1.13l-61.5-82.98h-199.425q-46.753,46.14-46.801,46.17c-.024.02-1.365.63-1.376.64-.143.04-1.333.19-1.378.19h-165.183l-1.339-1.02-177.359-134.61c-.730831,3.581688-8.132519,7.437111-12.087167,6.597133-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5s13.681244,6.599305,15,14.5c.23675,1.418374-2.224624,6.772459-2.927698,7.787923" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1804.72" stroke-dasharray="1804.72">
+            <animate  attributeName="stroke-dashoffset" values="1804.72; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-18">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-18"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-17">
+        <path id="cable-path-17"       
+        d="M2245,1845h-642.5c-1.95,1.46-4.72,1.32-6.51-.44l-130.03-128.06q-97.3-.01-97.33-.02c-.69-.05-2.48-.87-2.5-.89-.16-.11-1.04-.96-1.17-1.14l-75.46-103.45c-.21-.28-.87-1.87-.88-1.89-.01-.06-.12-1.09-.12-1.11v-50.6l-49.89-61.9h-141.611c-1.905,1.43-4.618,1.33-6.417-.35l-69.024-64.65h-159.399c.0027,6.5858-7.528841,15.016464-14.974332,14.100136-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c8.296052-.949537,14.876895,7.569992,14.910665,14.910666" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1690.23" stroke-dasharray="1690.23">
+            <animate attributeName="stroke-dashoffset" values="1690.23; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-17">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-17"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-16">
+        <path id="cable-path-16"       
+        d="M2245,1806h-300.82c-1.86.9-4.17.58-5.72-.97l-290.53-290.53h-176.17l-46.56,51.36c-1.75,1.93-4.66,2.17-6.7.64q-58.14-.13-58.16-.14c-.14-.03-2.23-1.18-2.25-1.21-.02-.02-.39-.4-.41-.43l-89.58-106.22h-152.6c-.021,0-2.159-.49-2.195-.51-.044-.02-1.254-.87-1.266-.88l-73.5-70.5c-1.605-1.54-1.959-3.89-1.039-5.79v-167.84l-57.695-61.48q-109.328.03-109.339.04l-41.625,54.21c-.556,2.16-2.512,3.75-4.841,3.75h-276.089c.576994,6.451122-6.986409,13.825237-14.871347,12.689584-8.284,0-15-6.49-15-14.5s6.716-14.5,15-14.5c10.037396-1.333954,16.019301,8.803169,14.971962,16.308653" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="2241.92" stroke-dasharray="2241.92">
+            <animate 
+                attributeName="stroke-dashoffset" values="2241.92; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-16">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-16"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+              <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-15">
+        <path id="cable-path-15"       
+        d="M2245,1703h-199.5c-1.95,1.47-4.74,1.32-6.53-.45l-251.53-250.05h-314.26c-1.98.96-4.44.52-5.96-1.22l-83.57-96.28q-240.34-.5-240.38-.52c-.03-.02-1.248-.89-1.264-.9q-43.749-42.77-43.777-42.8c-.323-.37-1.229-3.18-1.229-3.27l-.499-337.363-76.465-74.147h-230.206c-.301.522-.701.998-1.199,1.398-2.153,1.729-5.3,1.386-7.029-.767l-216.655-269.824c-.796.556607-6.650993,1.990414-7.483993,1.726928-8.284,0-15-6.492-15-14.5s6.716-14.5,15-14.5s13.94565,6.561711,15,14.5c.532668,4.010501-4.464896,10.979538-7.579746,12.876401" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="2438.49" stroke-dasharray="2438.49">
+            <animate attributeName="stroke-dashoffset" values="2438.49; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-15">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-15"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+              <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id= "cable-and-animated-group-middle_top">
+    <g id="cable-and-animated-unit-14">
+        <path id="cable-path-14"       
+        d="M2310.5,1635.5v-70.5c1.44-1.92,1.33-4.65-.38-6.45q-1.35-2.02-2.42-2.54L2271,1517v-214.5c0-2.35-1.62-4.31-3.79-4.85l-92.71-92.23.5-542.415c0-.071,0-.141,0-.211c6.295735.933012,15.785949-7.029968,15.274051-14.54971-.543877-7.98951-6.719999-14.500001-15-14.500001s-14.553803,6.504439-15,14.500001c-.462503,8.287759,7.919738,14.46666,14.650234,14.792926" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1121.08" stroke-dasharray="1121.08">
+            <animate attributeName="stroke-dashoffset" values="1121.08; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-14">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-14"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-13">
+        <path id="cable-path-13"       
+        d="M2343,1635.5v-88.5c0-.02-.09-.93-.1-.98c0-.03-.54-1.47-.61-1.59-.02-.03-.55-.74-.58-.78q-.03-.03-47.21-47.71v-230.94c0-.02-.05-.69-.05-.71-.01-.05-.36-1.27-.37-1.3-.02-.04-.63-1.05-.71-1.16q-.02-.02-90.87-91.89v-281.931l50.66-76.241c1.21-1.812,1.08-4.123-.16-5.769v-135.429c1.62-1.589,2-4.139.77-6.165L2202,579.101v-95.428c6.587471.786396,15.879481-5.878386,15.288444-14.358522-.55678-7.988621-6.72-14.5-15-14.5s-14.083346,6.544637-15,14.5c-1.021737,8.867342,7.92508,14.31451,14.532044,14.363102" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1332.15" stroke-dasharray="1332.15">
+            <animate attributeName="stroke-dashoffset"  values="1332.15; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-13">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-13"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>  
+    <g id="cable-and-animated-unit-12">
+        <path id="cable-path-12"       
+        d="M2412.5,1635.5v-231c0-2.06-1.25-3.83-3.02-4.59L2345,1334.93v-68.43c0-2.04-1.23-3.8-2.99-4.58L2232.5,1150.95v-263.114l57.4-76.211c1.82-.748,3.1-2.536,3.1-4.625v-221.82c.67-1.393.68-3.061-.07-4.49-.24-1.512-1.17-2.795-2.45-3.529L2251,521.607v-128.434c7.649466,1.088096,15.949301-6.096595,14.842301-14.282979-1.073111-7.935772-6.72-14.5-15-14.5s-14.895232,6.492685-15,14.5c-.135972,10.392163,9.127316,14.982881,15.046054,14.311752" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="1443.03" stroke-dasharray="1443.03">
+            <animate attributeName="stroke-dashoffset" values="1443.03; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-12">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-12"/> </animateMotion>
+            <g id="mini-cnc-connector-12" transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-11">
+        <path id="cable-path-11"       
+        d="M2480,1635.5v-300.82c.9-1.86.58-4.16-.96-5.71
+        L2284,1133v-247.085l51.4-68.219c1.82-.747,3.1-2.537,3.1-4.626v-257.983l58.79-68.254c0-.005.61-.884.67-1.01.01-.018.39-.994.46-1.376q.01-.024.08-132.542c7.166759.613162,15.849371-4.956532,14.830754-13.776798-.918706-7.955127-6.72-14.5-15-14.5s-14.885627,6.492818-15,14.5c-.115713,8.100963,9.061064,14.287791,15.382951,13.880055" 
+            fill="none" stroke="#3f5787"  stroke-width="10.562" stroke-dashoffset="1496.81" stroke-dasharray="1496.81">
+            <animate attributeName="stroke-dashoffset" values="1496.81; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-11">
+            <animateMotion  keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-11"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-10">
+        <path id="cable-path-10"       
+        d="M2517,1635.5v-314.82c.91-1.88.58-4.2-.99-5.74L2365,1166.38v-132.426l70.12-73.503c.01-.013.48-.59.51-.632.02-.026.45-.811.46-.844.02-.039.27-.789.28-.844.01-.027.12-.898.13-.941q0-.049,0-66.855c7.885909.224203,16.12649-6.372918,15.079938-14.072477-1.078559-7.935035-6.72-14.5-15-14.5s-15,6.492001-15,14.5c0,9.824874,9.310081,15.191187,14.870081,14.061925" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="929.64" stroke-dasharray="929.64">
+            <animate attributeName="stroke-dashoffset" values="929.64; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-10">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-10"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-9">
+        <path id="cable-path-9"       
+        d="M2551,1635.5v-192.48l78.1-81.05c.02-.02.27-.3.29-.33.03-.04.52-.78.53-.8.02-.05.37-.89.38-.94.01-.04.16-.8.17-.85q0-.02.03-326.372c.89-1.848.59-4.135-.93-5.683L2488.291455,883.614082c2.769066-1.700304,8.173116-8.13666,7.397468-12.176794-1.509848-7.864378-6.72-14.5-15-14.5s-15,6.492-15,14.5s5.043733,14.168578,13.323733,14.168578c1.311663-.09716,7.390355.852941,9.133059-1.991784" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="934.69" stroke-dasharray="934.69">
+            <animate attributeName="stroke-dashoffset" values="934.69; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-9">
+            <animateMotion  keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-9"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-8">
+        <path id="cable-path-8"       
+        d="M2620,1635.5v-113.94l148.63-149.6c2.46-.31,4.37-2.41,4.37-4.96v-259c0-.39-.05-.76-.13-1.12c0-.03-.12-.43-.14-.49c0-.02-.33-.77-.4-.9-.01-.01-.44-.63-.46-.65q-.1-.13-76.41-76.446l-2.44-141.228c6.033548-.287623,13.815495-5.468802,13.516693-14.165214-.274986-8.003277-6.72-14.5-15-14.5s-15,6.492-15,14.5c0,7.867573,6.135901,15.138968,16.377134,14.251614" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="936.33" stroke-dasharray="936.33">
+            <animate attributeName="stroke-dashoffset" values="936.33; 0" dur="10s" repeatCount="indefinite"
+            />
+        </path>
+        <g id="animated-component-on-path-8">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-8"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id= "cable-and-animated-group-right">
+    <g id="cable-and-animated-unit-7">
+        <path id="cable-path-7"       
+        d="M2675.649551,1705.247952l221.334701.246772c1.87.9,4.18.58,5.72-.97l120.54-121.03h409.54c.075924,6.657139,6.815099,15.206454,14.672422,14.19634c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5c-9.548945-.462192-15.160775,8.720592-14.724772,14.724772" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="900.18" stroke-dasharray="900.18">
+            <animate attributeName="stroke-dashoffset" values="900.18; 0" keyTimes="0; 1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-7">
+            <animateMotion  keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-7"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <g id="cable-and-animated-unit-6">
+        <path id="cable-path-6"       
+        d="M2675.649551,1770.247952l315.31045.752049l44.96,44c.77,1.77,2.53,3,4.58,3h397.66c.108805,6.090896,7.655779,15.06743,15.306663,13.409267c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5c-8.567149-.871638-16.672646,8.98023-15.440579,15.158508" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="874.88" stroke-dasharray="874.88">
+            <animate attributeName="stroke-dashoffset" values="874.88; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-6">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-6"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+    <!-- CABLE 5: Start 3s, End 7s -->
+    <g id="cable-and-animated-unit-5">
+        <path id="cable-path-5"       
+        d="M2675,1840.203851l195.053916-.905764l92.98,91.52c.77,1.76,2.53,2.98,4.57,2.98h128.5c.02,0,.18,0,.25-.01.03,0,.91-.13.94-.13.05-.02.79-.27.84-.29.03-.01.8-.45.83-.47q.04-.03,82.69-81.6h249.81c-.612609,6.280632,7.812552,16.130468,15.122701,14.347709c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5c-8.283259-.490735-15.935217,6.649481-15.184784,14.225835" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="921.91" stroke-dasharray="921.91">
+            <animate attributeName="stroke-dashoffset" values="921.91; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-5">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-5"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+
+    <!-- CABLE 4: Start 2s, End 6s -->
+    <g id="cable-and-animated-unit-4">
+        <path id="cable-path-4"       
+        d="M2675,1875h180.94l91.71,90.24c.56,2.16,2.52,3.76,4.85,3.76h166c1.98,1.49,4.81,1.31,6.58-.51l92.04-94.49h223.73c7.706763,8.139004,13.451323,14.239685,17.661486,18.729849.367785.392245.723862.772201,1.068514,1.140151-6.588426,2.089531-7.963289,10.551723-7.963289,13.561723c0,8.01,6.732306,14.586145,15,14.5s14.20777-4.49729,15-14.5-12.763444-18.556053-21.596296-13.851184" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="965.91" stroke-dasharray="965.91">
+            <animate attributeName="stroke-dashoffset" values="965.91; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-4">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-4"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+
+    <!-- CABLE 3: Start 0s, End 10s -->
+    <g id="cable-and-animated-unit-3">
+        <path id="cable-path-3"       
+        d="M2675,1943h66.43l112.55,111.55c.01.01.02.02.03.03.11.11.69.56.73.59.03.02.83.44.88.46.02.01.78.25.93.28.02,0,.82.09.88.09q.02,0,492.89,0c1.88.91,4.2.57,5.74-.99l87.612607-89.071646c1.141739,1.129119,4.687287,2.155523,6.977525,2.734242.87.15,1.76.23,2.67.23c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5-15,6.49-15,14.5c0,3.46,2.603848,9.333752,5.326127,11.454385" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="921.91" stroke-dasharray="921.91">
+            <animate attributeName="stroke-dashoffset" values="921.91; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-3">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-3"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+
+    <!-- CABLE 2: Start 0s, End 5s -->
+    <g id="cable-and-animated-unit-2">
+        <path id="cable-path-2"       
+        d="M2675,1943h66.43l112.55,111.55c.01.01.02.02.03.03.11.11.69.56.73.59.03.02.83.44.88.46.02.01.78.25.93.28.02,0,.82.09.88.09q.02,0,492.89,0c1.88.91,4.2.57,5.74-.99l87.612607-89.071646c1.141739,1.129119,4.687287,2.155523,6.977525,2.734242.87.15,1.76.23,2.67.23c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5-15,6.49-15,14.5c0,3.46,2.603848,9.333752,5.326127,11.454385" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="945.46" stroke-dasharray="945.46">
+            <animate attributeName="stroke-dashoffset" values="945.46; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-2">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-2"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+
+    <!-- CABLE 1: Start 0s, End 10s -->
+    <g id="cable-and-animated-unit-1">
+        <path id="cable-path-1"       
+        d="M2675,2012h42.43q.02.02,301.24,295.3c.5,1.87,2.07,3.31,4.02,3.63c1.4.74,3.07.76,4.49.07h412.435078l1.231651,4.661882c1.96,5.8,7.6,10,14.26,10c8.28,0,15-6.650786,15-14.5s-6.80565-14.523091-15-14.5c-3.025187,0-7.081638,1.122953-10.01296,3.682821-3.144134,2.745712-5.071424,7.047761-5.424597,10.419523" 
+            fill="none" stroke="#3f5787" stroke-width="10.562" stroke-dashoffset="979.65" stroke-dasharray="979.65">
+            <animate attributeName="stroke-dashoffset" values="979.65; 0" keyTimes="0;1" dur="10s" repeatCount="indefinite"/>
+        </path>
+        <g id="animated-component-on-path-1">
+            <animateMotion keyPoints="0; 1" keyTimes="0; 1" calcMode="linear" dur="10s" repeatCount="indefinite" rotate="0">
+                <mpath xlink:href="#cable-path-1"/> </animateMotion>
+            <g transform="scale(0.354146,0.299387) translate(-4008.081302,-346.61942)" opacity="1">
+                <use href="#component-cnc-unit" xlink:href="#component-cnc-unit"/>
+                <animate attributeName="opacity" values="1; 0" keyTimes="0; 1" calcMode="discrete" dur="10s" repeatCount="indefinite"/>
+            </g>
+        </g>
+    </g>
+</g>
+<g id= "main-cpu-board">
+    <path id="cpu-main-shape"
+        d="M2161.792897,1533
+        c.799675,0,1.453952.53497,1.453952,1.188824v14.265905h7.269752v-11.888254c0-.653854.654277-1.188824,1.453951-1.188824h14.539505
+        c.799675,0,1.453951.53497,1.453951,1.188824v11.888254h7.269753v-13.077078
+        c0-.653854.654276-1.188827,1.453951-1.188827h14.539505c.799674,0,1.453951.534973,1.453951,1.188827v13.077078h9.450679v-12.482665
+        c0-.653854.654277-1.188827,1.453951-1.188827h12.358578c.799671,0,1.453952.534973,1.453952,1.188827v12.482665h10.177654v-11.293841
+        c0-.653854.654277-1.188824,1.453948-1.188824h11.631606c.799671,0,1.453951.53497,1.453951,1.188824v11.293841h3.634875v-12.482665
+        c0-.653854.65428-1.188827,1.453951-1.188827h18.901358c.799671,0,1.453951.534973,1.453951,1.188827v12.482665h8.723701v-13.077078
+        c0-.653854.65428-1.188827,1.453951-1.188827h13.812532c.799672,0,1.453948.534973,1.453948,1.188827v13.077078h7.269753v-9.510603
+        c0-.653854.65428-2.972062,1.453951-2.972062h13.812533c.799671,0,1.453947,2.318208,1.453947,2.972062v9.510603h7.269753v-13.671492
+        c0-.653853.65428-1.188824,1.453951-1.188824h13.812529c.799675,0,1.453951.534971,1.453951,1.188824v13.671492h10.177655v-13.671492
+        c0-.653853.654277-1.188824,1.453951-1.188824h12.358578c.799675,0,1.453952.534971,1.453952,1.188824v13.671492h7.996728
+        c11.646145,0,21.082281,7.715474,21.082281,17.237967v10.699428l9.814167-.297208l9.814167,1.188826
+        c1.330365,1.087775,8.745512,1.676243,9.443408,1.313653l-.719704,9.68298
+        c0,.653854-7.924029,1.188827-8.723704,1.188827h-19.628334v5.944126h16.720432
+        c.799674,0,1.453951.53497,1.453951,1.188824v11.888254
+        c0,.653854-.654277,1.188825-1.453951,1.188825h-16.720432v5.944125h18.174383c.799675,0,1.453951.534973,1.453951,1.188827v11.888252
+        c0,.653854-.654276,1.188827-1.453951,1.188827h-18.174383v7.727363h17.447407c.799675,0,1.453952.53497,1.453952,1.188824v10.105017
+        c0,.653854-.654277,1.188824-1.453952,1.188824h-17.447407v8.321777h19.628334c.799675,0,1.453951.534973,1.453951,1.188826v9.510601
+        c0,.653854-.654276,1.188827-1.453951,1.188827h-19.628334v7.13295h17.447407c.799675,0,1.453952.534973,1.453952,1.188827v11.293838
+        c0,.653854-.654277,1.188827-1.453952,1.188827h-17.447407v7.132952h18.174383c.799675,0,1.453951.534971,1.453951,1.188824v12.482666
+        c0,.653853-.654276,1.188826-1.453951,1.188826h-18.174383v4.755299h13.812533c.799671,0,7.269752,1.723797,7.269752,2.377651v11.293841
+        c0,.653854-6.470081,0-7.269752,0h-13.812533v6.538539h18.901359c.799674,0,1.453951.534971,1.453951,1.188824v11.293841
+        c0,.653854-.654277,1.188825-1.453951,1.188825h-18.901359v7.727366h18.901359c.799674,0,1.453951.53497,1.453951,1.188824v10.105017
+        c0,.653853-.654277,1.188824-1.453951,1.188824h-18.901359v1.783237c0,9.52249-9.436136,17.237967-21.082281,17.237967h-7.996728v16.049143
+        c0,.653854-.654277,1.188824-1.453952,1.188824h-13.085553c-.799675,0-1.453952-.53497-1.453952-1.188824v-16.049143h-7.269752v13.671492
+        c0,.653854-.654277,1.188824-1.453951,1.188824h-14.539505c-.799671,0-1.453951-.53497-1.453951-1.188824v-13.671492h-7.269753v14.860316
+        c0,.653854-.654276,1.188827-1.453951,1.188827h-14.539505c-.799671,0-1.453951-.534973-1.453951-1.188827v-14.860316h-9.450676v14.265902
+        c0,.653854-.65428,1.188827-1.453951,1.188827h-12.358581c-.799671,0-1.453951-.534973-1.453951-1.188827v-14.265902h-10.177652v13.077078
+        c0,.653854-.65428,1.188824-1.453951,1.188824h-11.631606c-.799671,0-1.453948-.53497-1.453948-1.188824v-13.077078h-3.634878v14.265902
+        c0,.653854-.654276,1.188827-1.453951,1.188827h-18.901355c-.799674,0-1.453951-.534973-1.453951-1.188827v-14.265902h-8.723703v14.860316
+        c0,.653854-.654281,1.188827-1.453952,1.188827h-13.812529c-.799674,0-1.453951-.534973-1.453951-1.188827v-14.860316h-7.269753v11.293841
+        c0,.653854-.65428,1.188824-1.453951,1.188824h-13.812529c-.799675,0-1.453951-.53497-1.453951-1.188824v-11.293841h-7.269753v15.454729
+        c0,.653854-.65428,1.188824-1.453951,1.188824h-13.812529c-.799675,0-1.453951-.53497-1.453951-1.188824v-15.454729h-10.177655v15.454729
+        c0,.653854-.654277,1.188824-1.453951,1.188824h-12.358578c-.799675,0-1.453951-.53497-1.453951-1.188824v-15.454729h-7.996728
+        c-11.646143,0-21.082282-7.715477-21.082282-17.237967v-1.783237h-16.720432c-.799674,0-1.453951-.534971-1.453951-1.188824v-10.699428
+        c0-.653854.654277-1.188827,1.453951-1.188827h16.720432v-5.944126h-13.812533c-.799671,0-1.453948-.534973-1.453948-1.188826v-11.888252
+        c0-.653854.654277-1.188824,1.453948-1.188824h13.812533v-5.944129h-15.266481c-.799674,0-1.453951-.53497-1.453951-1.188824v-11.888251
+        c0-.653854.654277-1.188827,1.453951-1.188827h15.266481v-7.727364h-14.539505c-.799675,0-1.453951-.534972-1.453951-1.188826v-10.105015
+        c0-.653853.654276-1.188824,1.453951-1.188824h14.539505v-8.321779h-13.085557c-.799671,0-1.453948-.53497-1.453948-1.188824v-9.510604
+        c0-.653854.654277-1.188824,1.453948-1.188824h13.085557v-2.972064h-14.539505c-.799675,0-1.453951-.53497-1.453951-1.188824v-15.454729
+        c0-.653854.654276-1.188824,1.453951-1.188824h14.539505v-7.132953h-15.266481c-.799674,0-1.453951-.53497-1.453951-1.188824v-11.293841
+        c0-.653854.654277-1.188824,1.453951-1.188824h15.266481v-5.944129h-10.904631c-.799671,0-1.453951-.53497-1.453951-1.188824v-11.293841
+        c0-.653854.65428-1.188824,1.453951-1.188824h10.904631v-5.944126h-15.993456c-.799675,0-1.453951-.534973-1.453951-1.188826v-11.293841
+        c0-.653854.654276-1.188825,1.453951-1.188825h15.993456v-8.321776h-15.993456c-.799675,0-1.453951-.534973-1.453951-1.188827v-10.105014
+        c0-.653854.654276-1.188824,1.453951-1.188824h15.993456v-10.699428c0-9.522493,9.436139-17.237967,21.082282-17.237967h7.996728v-14.265905
+        c0-.653854.654276-1.188824,1.453951-1.188824h13.085553Zm282.793383,45.472567
+        c.05816.047554.050888.089163-.007271.124828l.007271-.124828Z" 
+        transform="matrix(1.389979 0 0 1.682333-686.709273-958.486962)" 
+        fill="#d9d9d9"
+    />
+</g>
+</svg>
