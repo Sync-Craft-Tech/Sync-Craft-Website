@@ -1,10 +1,10 @@
-
-#Left-hero {
-    /* Example optional background styling */
-background: rgba(17, 24, 39, 0.8);
-;
+.hero-heading {
+  display: inline-block;
+  background: rgba(17, 24, 39, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
-
+#p{background: rgba(17, 24, 39, 0.8);}
 /* Custom button effects*/
 .hero-button {
     transition: all 0.25s ease;

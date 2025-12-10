@@ -25,12 +25,12 @@ export default function HeroComponents() {
                     className="flex flex-col justify-center space-y-6 relative z-20"
                     >
                         <div className="space-y-3">
-                            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                            <h1 className="hero-heading text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                                 Build Something
                                 <span className="text-indigo-400"> Amazing</span> Today
                             </h1>
 
-                            <p className="max-w-[700px] text-gray-400 md:text-xl leading-relaxed">
+                            <p className="hero-heading max-w-[700px] text-gray-400 md:text-xl leading-relaxed">
                                 Create beautiful, modern applications with our powerful
                                 platform. Start building your next big idea with confidence
                                 and style.

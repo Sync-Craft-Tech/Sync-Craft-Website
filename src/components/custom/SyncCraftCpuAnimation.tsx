@@ -1,5 +1,7 @@
 import * as React from "react";
 import type { SVGProps } from "react";
+const GLOBAL_DURATION = "10s";
+const REPEAT_COUNT = "indefinite";
 const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -277,19 +279,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.4; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1203.03;1203.03;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.4; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__E" />
       </animateMotion>
@@ -301,9 +303,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.4; 0.75"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -319,19 +321,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.6; 0.7; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="591.45;591.45;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.6; 0.7; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__G" />
       </animateMotion>
@@ -343,9 +345,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.6; 0.7"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -361,19 +363,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1136.95;1136.95;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.2; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__H" />
       </animateMotion>
@@ -385,9 +387,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.2; 0.45"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -403,19 +405,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.75; 0.95; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="808.58;808.58;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.75; 0.95; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__I" />
       </animateMotion>
@@ -427,9 +429,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.75; 0.95"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -445,19 +447,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1028.98;1028.98;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__J" />
       </animateMotion>
@@ -469,9 +471,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.2; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -487,19 +489,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.45; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1028.98;1028.98;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.45; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__K" />
       </animateMotion>
@@ -511,9 +513,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.45; 0.75"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -529,19 +531,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.35; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="953.67;953.67;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.35; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__L" />
       </animateMotion>
@@ -553,9 +555,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.35; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -571,19 +573,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="792.16;792.16;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.2; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__M" />
       </animateMotion>
@@ -595,9 +597,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.2; 0.45"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -613,19 +615,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.15; 0.3; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="821.48;821.48;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.15; 0.3; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__N" />
       </animateMotion>
@@ -637,9 +639,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.15; 0.3"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -655,19 +657,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.4; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="705.36;705.36;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.4; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__O" />
       </animateMotion>
@@ -679,9 +681,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.4; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -697,19 +699,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.4; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="385.78;385.78;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.2; 0.4; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__P" />
       </animateMotion>
@@ -721,9 +723,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.2; 0.4"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -739,19 +741,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.65; 0.85; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="676.54;676.54;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.65; 0.85; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__Q" />
       </animateMotion>
@@ -763,9 +765,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.65; 0.85"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -781,19 +783,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.5; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="767.54;767.54;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.5; 0.75; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__R" />
       </animateMotion>
@@ -805,9 +807,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.5; 0.75"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -823,19 +825,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="421.48;421.48;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__S" />
       </animateMotion>
@@ -847,9 +849,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.2; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -865,19 +867,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.3; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="576.92;576.92;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.3; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__T" />
       </animateMotion>
@@ -889,9 +891,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.3; 0.45"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -907,19 +909,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.47; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="961.93;961.93;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.47; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__U" />
       </animateMotion>
@@ -931,9 +933,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.47; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -949,19 +951,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.34; 0.47; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="961.93;961.93;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.34; 0.47; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__V" />
       </animateMotion>
@@ -973,9 +975,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.34; 0.47"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -991,19 +993,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.16; 0.25; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="420.7;420.7;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.16; 0.25; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__W" />
       </animateMotion>
@@ -1015,9 +1017,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.16; 0.25"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1033,19 +1035,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.16; 0.3; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="548.2;548.2;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.16; 0.3; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__X" />
       </animateMotion>
@@ -1057,9 +1059,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.16; 0.3"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1075,19 +1077,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.7; 0.82; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="904.38;904.38;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.7; 0.82; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__Y" />
       </animateMotion>
@@ -1099,9 +1101,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.7; 0.82"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1117,19 +1119,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.6; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="676.13;676.13;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.6; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__Z" />
       </animateMotion>
@@ -1141,9 +1143,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.6; 0.9"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1159,19 +1161,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.6; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1484.44;1484.44;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.6; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aa" />
       </animateMotion>
@@ -1183,9 +1185,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.6; 0.9"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1201,19 +1203,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.1; 0.33; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="880.65;880.65;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.1; 0.33; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ab" />
       </animateMotion>
@@ -1225,9 +1227,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.1; 0.33"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1243,19 +1245,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.35; 0.55; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="580.78;580.78;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.35; 0.55; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ac" />
       </animateMotion>
@@ -1267,9 +1269,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.35; 0.55"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1285,19 +1287,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.26; 0.35; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="377.16;377.16;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.26; 0.35; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ad" />
       </animateMotion>
@@ -1309,9 +1311,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.26; 0.35"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1327,19 +1329,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.04; 0.25; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="738.19;738.19;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.04; 0.25; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ae" />
       </animateMotion>
@@ -1351,9 +1353,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.04; 0.25"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1369,19 +1371,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.53; 0.96; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1508.59;1508.59;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.53; 0.96; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__af" />
       </animateMotion>
@@ -1393,9 +1395,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.53; 0.96"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1411,19 +1413,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.04; 0.31; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="999.77;999.77;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.04; 0.31; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ag" />
       </animateMotion>
@@ -1435,9 +1437,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.04; 0.31"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1453,19 +1455,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.17; 0.27; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="534.34;534.34;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.17; 0.27; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ah" />
       </animateMotion>
@@ -1477,9 +1479,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.17; 0.27"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1495,19 +1497,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.16; 0.92; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1936.2;1936.2;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.16; 0.92; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ai" />
       </animateMotion>
@@ -1519,9 +1521,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 00.16; 0.92"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1537,19 +1539,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.35; 0.64; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1059.76;1059.76;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.35; 0.55; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aj" />
       </animateMotion>
@@ -1561,9 +1563,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.35; 0.55"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1579,19 +1581,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.64; 0.84; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="638.76;638.76;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.64; 0.84; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ak" />
       </animateMotion>
@@ -1603,9 +1605,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.64; 0.84"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1621,19 +1623,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.22; 0.48; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="563.8;563.8;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.22; 0.48; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__al" />
       </animateMotion>
@@ -1645,9 +1647,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.22; 0.48"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1663,19 +1665,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.22; 0.4; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="487.82;487.82;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.22; 0.4; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__am" />
       </animateMotion>
@@ -1687,9 +1689,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.22; 0.4"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1705,19 +1707,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.25; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="740.98;740.98;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.25; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__an" />
       </animateMotion>
@@ -1729,9 +1731,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.25; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1747,19 +1749,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.57; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="938.81;938.81;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0; 0.57; 0.9; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ao" />
       </animateMotion>
@@ -1771,9 +1773,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 0.57; 0.9"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1789,19 +1791,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.43; 0.8; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1122.15;1122.15;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.43;0.8; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ap" />
       </animateMotion>
@@ -1813,9 +1815,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.43; 0.8"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1831,19 +1833,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.28; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="696.53;696.53;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.28;0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aq" />
       </animateMotion>
@@ -1855,9 +1857,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.28; 0.45"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1873,19 +1875,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.28; 0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="607.12;607.12;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.28;0.45; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ar" />
       </animateMotion>
@@ -1897,9 +1899,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.28; 0.45"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1915,19 +1917,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="2506.25;2506.25;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.2;0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__as" />
       </animateMotion>
@@ -1939,9 +1941,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.2; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1957,19 +1959,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.2; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="2055.39;2055.39;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.2;0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__at" />
       </animateMotion>
@@ -1981,9 +1983,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.2; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -1999,19 +2001,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.12; 0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1207.96;1207.96;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.12;0.5; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__au" />
       </animateMotion>
@@ -2023,9 +2025,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.12; 0.5"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2041,19 +2043,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.36; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="1688.62;1688.62;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.36;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__av" />
       </animateMotion>
@@ -2065,9 +2067,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.36; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2083,19 +2085,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.13; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="592.03;592.03;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.13;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aw" />
       </animateMotion>
@@ -2107,9 +2109,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.13; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2125,19 +2127,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.12; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="792.73;792.73;0; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.12;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ax" />
       </animateMotion>
@@ -2149,9 +2151,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.12; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2167,19 +2169,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.14; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="336.55;336.55;0;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.14;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ay" />
       </animateMotion>
@@ -2191,9 +2193,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.14; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2209,19 +2211,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.15; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="745.12;745.12;0;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.15;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__az" />
       </animateMotion>
@@ -2233,9 +2235,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.15; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2251,19 +2253,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.35; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="493.41;493.41;0;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.35;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aA" />
       </animateMotion>
@@ -2275,9 +2277,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.35; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2293,19 +2295,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 0.35; 0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="445.35;445.35;0;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 0; 1; 1"
         keyTimes="0;0.35;0.6; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aB" />
       </animateMotion>
@@ -2317,9 +2319,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0;0.35; 0.6"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="0;1; 0"
         />
       </g>
@@ -2335,18 +2337,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1787.73;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aC" />
       </animateMotion>
@@ -2358,9 +2360,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2376,18 +2378,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1595.2; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aD" />
       </animateMotion>
@@ -2399,9 +2401,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2417,18 +2419,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1660.11; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aE" />
       </animateMotion>
@@ -2440,9 +2442,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2458,18 +2460,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="482.82; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aF" />
       </animateMotion>
@@ -2481,9 +2483,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2499,18 +2501,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1672.72;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aG" />
       </animateMotion>
@@ -2522,9 +2524,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2540,18 +2542,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1532.37; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aH" />
       </animateMotion>
@@ -2563,9 +2565,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2581,18 +2583,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1737.55;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aI" />
       </animateMotion>
@@ -2604,9 +2606,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2622,18 +2624,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="2214.13;0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aJ" />
       </animateMotion>
@@ -2645,9 +2647,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2663,18 +2665,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="892.79; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aK" />
       </animateMotion>
@@ -2686,9 +2688,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2704,18 +2706,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1804.72; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aL" />
       </animateMotion>
@@ -2727,9 +2729,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2745,18 +2747,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1690.23; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aM" />
       </animateMotion>
@@ -2768,9 +2770,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2786,18 +2788,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="2241.92; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aN" />
       </animateMotion>
@@ -2809,9 +2811,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2827,18 +2829,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="2438.49; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aO" />
       </animateMotion>
@@ -2850,9 +2852,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2868,18 +2870,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1121.08; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aP" />
       </animateMotion>
@@ -2891,9 +2893,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2909,18 +2911,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1332.15; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aQ" />
       </animateMotion>
@@ -2932,9 +2934,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2950,18 +2952,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1443.03; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aR" />
       </animateMotion>
@@ -2973,9 +2975,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -2991,18 +2993,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="1496.81; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aS" />
       </animateMotion>
@@ -3014,9 +3016,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3032,18 +3034,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="929.64; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aT" />
       </animateMotion>
@@ -3055,9 +3057,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3073,18 +3075,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="934.69; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aU" />
       </animateMotion>
@@ -3096,9 +3098,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3114,18 +3116,18 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
-        repeatCount="indefinite"
+        dur={GLOBAL_DURATION}
+        repeatCount={REPEAT_COUNT}
         values="936.33; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aV" />
       </animateMotion>
@@ -3137,9 +3139,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3155,19 +3157,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="900.18; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aW" />
       </animateMotion>
@@ -3179,9 +3181,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3197,19 +3199,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="874.88; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aX" />
       </animateMotion>
@@ -3221,9 +3223,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3239,19 +3241,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="921.91; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aY" />
       </animateMotion>
@@ -3263,9 +3265,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3281,19 +3283,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="965.91; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__aZ" />
       </animateMotion>
@@ -3305,9 +3307,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3323,19 +3325,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="921.91; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__ba" />
       </animateMotion>
@@ -3347,9 +3349,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3365,19 +3367,19 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
         values="945.46; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__bb" />
       </animateMotion>
@@ -3389,9 +3391,9 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
@@ -3400,26 +3402,26 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
       id="SynCraft_CPU_Animation_svg__bc"
       fill="none"
       stroke="#3f5787"
-      strokeDasharray={979.65}
-      strokeDashoffset={979.65}
+      strokeDasharray={950.74}
+      strokeDashoffset={950.74}
       strokeWidth={10.562}
-      d="M2675 2012h42.43l301.24 295.3c.5 1.87 2.07 3.31 4.02 3.63 1.4.74 3.07.76 4.49.07h412.435l1.232 4.662c1.96 5.8 7.6 10 14.26 10 8.28 0 15-6.65 15-14.5s-6.806-14.523-15-14.5c-3.025 0-7.082 1.123-10.013 3.683-3.144 2.745-5.072 7.047-5.425 10.42"
+      d="M2675,1978h49.43c.02.02.04.04.05.06l134.5,133c.04.03.73.59.77.61.03.02.81.44.84.45.05.02.89.28.95.29.03,0,.85.09.92.09q.01,0,264.5,0l102.55,100.08c.01.01.31.27.35.31.03.02.68.46.72.48.02.02.83.37.86.38.06.02.92.21.96.21q.05.01,203.845117.04l1.560853,5.227412c2.24,5.28,7.61,9,13.88,9c8.28,0,15-6.49,15-14.5s-6.72-14.5-15-14.5c-2.205217,0-5.736505.107398-7.656252,1.386416-2.557598,1.70398-4.706415,4.087492-6.374053,6.718596-1.253248,1.977303-.84412,4.861718-1.378173,6.603748"
     >
       <animate
         attributeName="stroke-dashoffset"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyTimes="0;1"
-        repeatCount="indefinite"
-        values="979.65; 0"
+        repeatCount={REPEAT_COUNT}
+        values="950.74; 0"
       />
     </path>
     <g>
       <animateMotion
         calcMode="linear"
-        dur="10s"
+        dur={GLOBAL_DURATION}
         keyPoints="0; 1"
         keyTimes="0; 1"
-        repeatCount="indefinite"
+        repeatCount={REPEAT_COUNT}
       >
         <mpath xlinkHref="#SynCraft_CPU_Animation_svg__bc" />
       </animateMotion>
@@ -3431,9 +3433,51 @@ const SvgSynCraftCpuAnimation = (props: SVGProps<SVGSVGElement>) => (
         <animate
           attributeName="opacity"
           calcMode="discrete"
-          dur="10s"
+          dur={GLOBAL_DURATION}
           keyTimes="0; 1"
-          repeatCount="indefinite"
+          repeatCount={REPEAT_COUNT}
+          values="1; 0"
+        />
+      </g>
+      <path
+      id="SynCraft_CPU_Animation_svg__bd"
+      fill="none"
+      stroke="#3f5787"
+      strokeDasharray={979.65}
+      strokeDashoffset={979.65}
+      strokeWidth={10.562}
+      d="M2675 2012h42.43l301.24 295.3c.5 1.87 2.07 3.31 4.02 3.63 1.4.74 3.07.76 4.49.07h412.435l1.232 4.662c1.96 5.8 7.6 10 14.26 10 8.28 0 15-6.65 15-14.5s-6.806-14.523-15-14.5c-3.025 0-7.082 1.123-10.013 3.683-3.144 2.745-5.072 7.047-5.425 10.42"
+      >
+        <animate
+          attributeName="stroke-dashoffset"
+          dur={GLOBAL_DURATION}
+          keyTimes="0;1"
+          repeatCount={REPEAT_COUNT}
+          values="979.65; 0"
+        />
+      </path>
+    </g>
+    <g>
+      <animateMotion
+        calcMode="linear"
+        dur={GLOBAL_DURATION}
+        keyPoints="0; 1"
+        keyTimes="0; 1"
+        repeatCount={REPEAT_COUNT}
+      >
+        <mpath xlinkHref="#SynCraft_CPU_Animation_svg__bd" />
+      </animateMotion>
+      <g transform="matrix(.35415 0 0 .29939 -1419.446 -103.773)">
+        <use
+          xlinkHref="#SynCraft_CPU_Animation_svg__F"
+          href="#SynCraft_CPU_Animation_svg__F"
+        />
+        <animate
+          attributeName="opacity"
+          calcMode="discrete"
+          dur={GLOBAL_DURATION}
+          keyTimes="0; 1"
+          repeatCount={REPEAT_COUNT}
           values="1; 0"
         />
       </g>
